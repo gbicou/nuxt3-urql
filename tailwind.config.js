@@ -19,5 +19,7 @@ module.exports = {
             borderWidth: ['responsive', 'hover', 'focus', 'active'],
         },
     },
-    plugins: [],
+    plugins: [
+        require('@tailwindcss/forms'),
+    ]
 }
