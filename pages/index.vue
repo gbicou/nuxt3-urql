@@ -8,5 +8,5 @@
 </template>
 
 <script setup lang="ts">
-const n = ref(8)
+const n = ref(10)
 </script>
