@@ -6,7 +6,7 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "nuxt3": "^3.0.0-27234175.2fb58ae",
+    "nuxt3": "^3.0.0-27235451.ece0e01",
     "tailwindcss": "^2.2.16"
   },
   "dependencies": {
