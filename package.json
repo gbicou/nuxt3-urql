@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "start": "node .output/server"
+  },
+  "devDependencies": {
+    "nuxt3": "^3.0.0-27234175.2fb58ae"
+  }
+}
