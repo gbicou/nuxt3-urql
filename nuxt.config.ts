@@ -4,13 +4,19 @@ export default defineNuxtConfig({
     css: [
         'assets/tailwind.css'
     ],
-    /*
     build: {
         // You can extend webpack config here
         transpile: [
 //            '@vue/apollo-composable',
-//            '@apollo/client',
+            '@apollo/client',
         ],
+    },
+    vite: {
+        optimizeDeps: {
+            include: [
+                '@apollo/client/core',
+                '@apollo/client/cache'
+            ]
+        }
     }
-     */
 })
