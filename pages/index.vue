@@ -1,12 +1,19 @@
 <template>
   <section class="pt-5">
     <input type="number" v-model="n" />
-    <div class="grid grid-cols-4 gap-4">
-      <div v-for="i in n">{{i}}</div>
+    <div class="grid grid-cols-6 gap-3 pt-5" v-if="n">
+      <div v-for="c in n" :key="c" class="bg-green-300 rounded-2xl border hover:border-green-500 p-2 px-4">{{c}}</div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
 const n = ref(10)
+
+/*
+import gql from 'graphql-tag'
+import {useQuery} from "@vue/apollo-composable"
+
+const result = useQuery(gql`query countries { countries { code, name } }`)
+*/
 </script>
