@@ -8,12 +8,11 @@
 </template>
 
 <script setup lang="ts">
+import {AllCountriesDocument} from "../gql/queries/all-countries";
+// import {useQuery} from "@vue/apollo-composable"
+
 const n = ref(10)
 
-/*
-import gql from 'graphql-tag'
-import {useQuery} from "@vue/apollo-composable"
+// const result = useQuery(AllCountriesDocument)
 
-const result = useQuery(gql`query countries { countries { code, name } }`)
-*/
 </script>
