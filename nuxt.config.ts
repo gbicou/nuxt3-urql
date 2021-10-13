@@ -5,6 +5,13 @@ export default defineNuxtConfig({
         'assets/tailwind.css'
     ],
     build: {
+        postcss: {
+            postcssOptions: {
+                plugins: {
+                    tailwindcss: {}
+                }
+            }
+        },
         // You can extend webpack config here
         transpile: [
 //            '@vue/apollo-composable',
