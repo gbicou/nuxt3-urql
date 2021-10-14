@@ -19,12 +19,15 @@ generates:
       extension: .ts
     config:
       preResolveTypes: false
+#      documentMode: external
+#      importDocumentNodeExternallyFrom: near-operation-file
     plugins:
       - typescript-operations
       - typed-document-node
-  gql/apollo-helpers.ts:
-    plugins:
-      - typescript-apollo-client-helpers
+#      - typescript-urql
+#  gql/apollo-helpers.ts:
+#    plugins:
+#      - typescript-apollo-client-helpers
   gql/fragment-matcher.ts:
     plugins:
       - fragment-matcher
