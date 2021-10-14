@@ -20,9 +20,10 @@ export default (context: NuxtApp, inject) => {
 
   inject('urql', client)
   inject('ussr', ssr)
+  context.app.provide('$urql', client)
 
   context.hook('app:rendered', () => {
-    //context.ssrContext.URQL = ssr.extractData()
+    // context.ssrContext.URQL = ssr.extractData()
     console.debug(ssr.extractData())
     // console.debug(c)
   })
