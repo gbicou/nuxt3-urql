@@ -17,7 +17,7 @@
     "@graphql-codegen/typescript-urql": "^3.2.2",
     "graphql": "^15.6.1",
     "graphql-tag": "^2.12.5",
-    "nuxt3": "^3.0.0-27236968.080f497",
+    "nuxt3": "^3.0.0-27237089.3e38eb8",
     "sass": "^1.43.2",
     "tailwindcss": "^2.2.17"
   },
