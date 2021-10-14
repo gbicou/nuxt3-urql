@@ -8,11 +8,20 @@
 
 <script setup lang="ts">
 import {AllCountriesDocument} from "../gql/queries/all-countries";
+
+import {useNuxtApp} from "#app";
+
+const app = useNuxtApp()
+
+const { data } = await app.$urql.query(AllCountriesDocument).toPromise()
+
+/*
 import {useClientHandle} from "@urql/vue";
 
 const urql = useClientHandle();
 
 const { data, error } = await urql.useQuery({query: AllCountriesDocument})
+*/
 
 /*
 const data = await useAsyncData('countriesg', ctx => {
