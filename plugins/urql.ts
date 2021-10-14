@@ -1,14 +1,26 @@
 import { createClient, ssrExchange, cacheExchange, dedupExchange, fetchExchange } from '@urql/core';
-import {NuxtApp} from "nuxt3";
 import { defineNuxtPlugin } from '#app'
 
-export default defineNuxtPlugin((nuxt) => {
+const payloadKey = '__URQL_DATA__'
+
+export default defineNuxtPlugin(nuxt => {
   const { app } = nuxt
 
   const ssr = ssrExchange({
-    isClient: process.client,
-    initialState: process.client ? window.__URQL_DATA__ : undefined,
+    isClient: process.client
   })
+
+  if (process.client) {
+    nuxt.hook('app:created', () => {
+      ssr.restoreData(nuxt.payload[payloadKey])
+    })
+  }
+
+  if (process.server) {
+    nuxt.hook('app:rendered', () => {
+      nuxt.payload[payloadKey] = ssr.extractData()
+    })
+  }
 
   const client = createClient({
     url: 'https://countries.trevorblades.com/',
@@ -20,19 +32,6 @@ export default defineNuxtPlugin((nuxt) => {
     ],
   })
 
-  // inject('ussr', ssr)
-  // app.use()
   app.provide('$urql', client)
 
-  nuxt.hook('app:rendered', () => {
-    // context.ssrContext.URQL = ssr.extractData()
-    // console.debug(ssr.extractData())
-    // console.debug(c)
-  })
-//    context.app.use(urql, client)
-/*
-    context.app.use(urql, {
-        url: 'https://countries.trevorblades.com/',
-    })
-*/
 })
