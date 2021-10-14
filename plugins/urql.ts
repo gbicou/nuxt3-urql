@@ -1,4 +1,4 @@
-import { createClient, ssrExchange, cacheExchange, dedupExchange, fetchExchange } from '@urql/core';
+import { createClient, ssrExchange, cacheExchange, dedupExchange, fetchExchange, Client } from '@urql/core';
 import { defineNuxtPlugin } from '#app'
 
 const payloadKey = '__URQL_DATA__'
@@ -32,6 +32,13 @@ export default defineNuxtPlugin(nuxt => {
     ],
   })
 
+  nuxt.provide('urql', client)
   app.provide('$urql', client)
 
 })
+
+declare module '#app' {
+  interface NuxtApp {
+    $urql: Client
+  }
+}
