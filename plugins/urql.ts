@@ -1,17 +1,10 @@
-import { createClient, ssrExchange, dedupExchange, fetchExchange, Client } from '@urql/core';
-import { cacheExchange } from '@urql/exchange-graphcache'
+import { createClient, ssrExchange, dedupExchange, fetchExchange, cacheExchange, Client } from '@urql/core';
+import { cacheExchange as graphCacheExchange } from '@urql/exchange-graphcache'
 import { defineNuxtPlugin } from '#app'
 import schema from '../gql/introspection';
 import { GraphCacheConfig } from '../gql/schema';
 
-const payloadKey = '__URQL_DATA__'
-
-const cacheConfig: GraphCacheConfig = {
-  schema,
-  keys: {
-    Country: (data) => data.code || null
-  }
-}
+const ssrKey = '__URQL_DATA__'
 
 export default defineNuxtPlugin(nuxt => {
   const { app } = nuxt
@@ -20,19 +13,29 @@ export default defineNuxtPlugin(nuxt => {
     isClient: process.client
   })
 
-  const cache = cacheExchange(cacheConfig)
-
+  // when app is created in browser, restore SSR state from nuxt payload
   if (process.client) {
     nuxt.hook('app:created', () => {
-      ssr.restoreData(nuxt.payload[payloadKey])
+      ssr.restoreData(nuxt.payload[ssrKey])
     })
   }
 
+  // when app has rendered in server, send SSR state to client
   if (process.server) {
     nuxt.hook('app:rendered', () => {
-      nuxt.payload[payloadKey] = ssr.extractData()
+      nuxt.payload[ssrKey] = ssr.extractData()
     })
   }
+
+  // use urql graphcache
+  const cacheConfig: GraphCacheConfig = {
+    schema,
+    keys: {
+      Country: (data) => data.code || null
+    },
+    // storage: process.client ? makeDefaultStorage() : undefined
+  }
+  const cache = graphCacheExchange(cacheConfig)
 
   const client = createClient({
     url: 'https://countries.trevorblades.com/',

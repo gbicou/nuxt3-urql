@@ -7,6 +7,7 @@ config:
   scalars:
     Long: number
   defaultScalarType: never
+  useTypeImports: true
 generates:
   gql/schema.ts:
     plugins:

@@ -1,4 +1,4 @@
-import { IntrospectionQuery } from 'graphql';
+import type { IntrospectionQuery } from 'graphql';
 export default {
   "__schema": {
     "queryType": {
