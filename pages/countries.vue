@@ -1,12 +1,12 @@
 <template>
   <section class="pt-5">
     <input type="text" v-model.trim="code" placeholder="search code" />
-    <div v-if="data">
+    <div v-if="data" class="pt-5">
       <table>
         <tbody>
         <tr v-for="c in data.countries" :key="c.code">
+          <td class="pr-2">{{ c.emoji }}</td>
           <td>{{ c.name }}</td>
-          <td>{{ c.emoji }}</td>
         </tr>
         </tbody>
       </table>
