@@ -3,6 +3,7 @@ import { cacheExchange as graphCacheExchange } from '@urql/exchange-graphcache'
 import { defineNuxtPlugin } from '#app'
 import schema from '../gql/introspection';
 import { GraphCacheConfig } from '../gql/schema';
+import { fetch } from 'ohmyfetch'
 
 const ssrKey = '__URQL_DATA__'
 
@@ -50,6 +51,7 @@ export default defineNuxtPlugin(nuxt => {
       ssr, // Add `ssr` in front of the `fetchExchange`
       fetchExchange,
     ],
+    fetch
   })
 
   nuxt.provide('urql', client)
