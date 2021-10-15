@@ -20,15 +20,10 @@ generates:
       extension: .ts
     config:
       preResolveTypes: false
-#      documentMode: external
-#      importDocumentNodeExternallyFrom: near-operation-file
     plugins:
       - typescript-operations
       - typed-document-node
-#      - typescript-urql
+#      - typescript-vue-urql
   gql/introspection.ts:
     plugins:
       - urql-introspection
-    config:
-      includeScalars: true
-      module: es2015

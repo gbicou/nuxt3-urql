@@ -8,10 +8,6 @@ export default {
     "subscriptionType": null,
     "types": [
       {
-        "kind": "SCALAR",
-        "name": "Boolean"
-      },
-      {
         "kind": "OBJECT",
         "name": "Continent",
         "fields": [
@@ -21,8 +17,7 @@ export default {
               "kind": "NON_NULL",
               "ofType": {
                 "kind": "SCALAR",
-                "name": "ID",
-                "ofType": null
+                "name": "Any"
               }
             },
             "args": []
@@ -51,8 +46,7 @@ export default {
               "kind": "NON_NULL",
               "ofType": {
                 "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
+                "name": "Any"
               }
             },
             "args": []
@@ -68,8 +62,7 @@ export default {
             "name": "capital",
             "type": {
               "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
+              "name": "Any"
             },
             "args": []
           },
@@ -79,8 +72,7 @@ export default {
               "kind": "NON_NULL",
               "ofType": {
                 "kind": "SCALAR",
-                "name": "ID",
-                "ofType": null
+                "name": "Any"
               }
             },
             "args": []
@@ -101,8 +93,7 @@ export default {
             "name": "currency",
             "type": {
               "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
+              "name": "Any"
             },
             "args": []
           },
@@ -112,8 +103,7 @@ export default {
               "kind": "NON_NULL",
               "ofType": {
                 "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
+                "name": "Any"
               }
             },
             "args": []
@@ -124,8 +114,7 @@ export default {
               "kind": "NON_NULL",
               "ofType": {
                 "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
+                "name": "Any"
               }
             },
             "args": []
@@ -154,8 +143,7 @@ export default {
               "kind": "NON_NULL",
               "ofType": {
                 "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
+                "name": "Any"
               }
             },
             "args": []
@@ -166,8 +154,7 @@ export default {
               "kind": "NON_NULL",
               "ofType": {
                 "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
+                "name": "Any"
               }
             },
             "args": []
@@ -178,8 +165,7 @@ export default {
               "kind": "NON_NULL",
               "ofType": {
                 "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
+                "name": "Any"
               }
             },
             "args": []
@@ -206,10 +192,6 @@ export default {
         "interfaces": []
       },
       {
-        "kind": "SCALAR",
-        "name": "ID"
-      },
-      {
         "kind": "OBJECT",
         "name": "Language",
         "fields": [
@@ -219,8 +201,7 @@ export default {
               "kind": "NON_NULL",
               "ofType": {
                 "kind": "SCALAR",
-                "name": "ID",
-                "ofType": null
+                "name": "Any"
               }
             },
             "args": []
@@ -229,8 +210,7 @@ export default {
             "name": "name",
             "type": {
               "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
+              "name": "Any"
             },
             "args": []
           },
@@ -238,8 +218,7 @@ export default {
             "name": "native",
             "type": {
               "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
+              "name": "Any"
             },
             "args": []
           },
@@ -249,8 +228,7 @@ export default {
               "kind": "NON_NULL",
               "ofType": {
                 "kind": "SCALAR",
-                "name": "Boolean",
-                "ofType": null
+                "name": "Any"
               }
             },
             "args": []
@@ -276,8 +254,7 @@ export default {
                   "kind": "NON_NULL",
                   "ofType": {
                     "kind": "SCALAR",
-                    "name": "ID",
-                    "ofType": null
+                    "name": "Any"
                   }
                 }
               }
@@ -349,8 +326,7 @@ export default {
                   "kind": "NON_NULL",
                   "ofType": {
                     "kind": "SCALAR",
-                    "name": "ID",
-                    "ofType": null
+                    "name": "Any"
                   }
                 }
               }
@@ -370,8 +346,7 @@ export default {
                   "kind": "NON_NULL",
                   "ofType": {
                     "kind": "SCALAR",
-                    "name": "ID",
-                    "ofType": null
+                    "name": "Any"
                   }
                 }
               }
@@ -414,8 +389,7 @@ export default {
             "name": "code",
             "type": {
               "kind": "SCALAR",
-              "name": "String",
-              "ofType": null
+              "name": "Any"
             },
             "args": []
           },
@@ -437,22 +411,13 @@ export default {
               "kind": "NON_NULL",
               "ofType": {
                 "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
+                "name": "Any"
               }
             },
             "args": []
           }
         ],
         "interfaces": []
-      },
-      {
-        "kind": "SCALAR",
-        "name": "String"
-      },
-      {
-        "kind": "SCALAR",
-        "name": "Upload"
       },
       {
         "kind": "SCALAR",
