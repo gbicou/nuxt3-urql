@@ -1,6 +1,18 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 example of graphql with ssr
 
-We recommend to look at the [documentation](http://v3.nuxtjs.org).
+This is a example of nuxt3 application with :
+
+* [graphql code generation](https://www.graphql-code-generator.com/)
+* [urql graphql client](https://formidable.com/open-source/urql/)
+* SSR
+* typescript everywhere
+* composition api
+
+Using countries graphql api from Trevor Blades https://countries.trevorblades.com/
+
+## Docs
+
+We recommend to look at the [nuxt3 documentation](http://v3.nuxtjs.org).
 
 ## Setup
 
@@ -11,6 +23,12 @@ yarn install
 ```
 
 ## Development
+
+Rebuild typescript sources (schema, introspection and operations) from graphql files
+
+```bash
+yarn graphql-codegen
+```
 
 Start the development server on http://localhost:3000
 
@@ -27,3 +45,7 @@ yarn build
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
+
+## Demo
+
+Application is deployed on vercel @ https://nuxt3-urql.vercel.app/
