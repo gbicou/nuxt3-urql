@@ -12,21 +12,8 @@ export default defineNuxtConfig({
                 }
             }
         },
-        // You can extend webpack config here
         transpile: [
-//            '@vue/apollo-composable',
-//            '@apollo/client',
-//            'ts-invariant'
+            '@urql/vue'
         ],
     },
-    /*
-    vite: {
-        optimizeDeps: {
-            include: [
-//                '@apollo/client/core',
-//                '@apollo/client/cache'
-            ]
-        }
-    }
-     */
 })
