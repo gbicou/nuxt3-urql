@@ -1,6 +1,6 @@
-import type * as Types from '../schema';
+import * as Types from '../schema';
 
-import type { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/core';
+import { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/core';
 export type AllCountriesQueryVariables = Types.Exact<{
   filter?: Types.Maybe<Types.CountryFilterInput>;
 }>;

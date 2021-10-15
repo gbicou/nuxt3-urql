@@ -7,11 +7,11 @@ config:
   scalars:
     Long: number
   defaultScalarType: never
-  useTypeImports: true
 generates:
   gql/schema.ts:
     plugins:
       - typescript
+      - typescript-urql-graphcache
   gql/:
     preset: near-operation-file
     presetConfig:
@@ -25,9 +25,9 @@ generates:
       - typescript-operations
       - typed-document-node
 #      - typescript-urql
-#  gql/apollo-helpers.ts:
-#    plugins:
-#      - typescript-apollo-client-helpers
-  gql/fragment-matcher.ts:
+  gql/introspection.ts:
     plugins:
-      - fragment-matcher
+      - urql-introspection
+    config:
+      includeScalars: true
+      module: es2015

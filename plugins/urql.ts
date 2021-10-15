@@ -1,7 +1,17 @@
-import { createClient, ssrExchange, cacheExchange, dedupExchange, fetchExchange, Client } from '@urql/core';
+import { createClient, ssrExchange, dedupExchange, fetchExchange, Client } from '@urql/core';
+import { cacheExchange } from '@urql/exchange-graphcache'
 import { defineNuxtPlugin } from '#app'
+import schema from '../gql/introspection';
+import { GraphCacheConfig } from '../gql/schema';
 
 const payloadKey = '__URQL_DATA__'
+
+const cacheConfig: GraphCacheConfig = {
+  schema,
+  keys: {
+    Country: (data) => data.code || null
+  }
+}
 
 export default defineNuxtPlugin(nuxt => {
   const { app } = nuxt
@@ -9,6 +19,8 @@ export default defineNuxtPlugin(nuxt => {
   const ssr = ssrExchange({
     isClient: process.client
   })
+
+  const cache = cacheExchange(cacheConfig)
 
   if (process.client) {
     nuxt.hook('app:created', () => {
@@ -26,7 +38,7 @@ export default defineNuxtPlugin(nuxt => {
     url: 'https://countries.trevorblades.com/',
     exchanges: [
       dedupExchange,
-      cacheExchange,
+      cache,
       ssr, // Add `ssr` in front of the `fetchExchange`
       fetchExchange,
     ],

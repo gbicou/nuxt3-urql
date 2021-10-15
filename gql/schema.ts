@@ -1,3 +1,5 @@
+import { Resolver as GraphCacheResolver, UpdateResolver as GraphCacheUpdateResolver, OptimisticMutationResolver as GraphCacheOptimisticMutationResolver, StorageAdapter as GraphCacheStorageAdapter } from '@urql/exchange-graphcache';
+import { IntrospectionData } from '@urql/exchange-graphcache/dist/types/ast';
 export type Maybe<T> = T | null;
 export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };
 export type MakeOptional<T, K extends keyof T> = Omit<T, K> & { [SubKey in K]?: Maybe<T[SubKey]> };
@@ -116,4 +118,71 @@ export type StringQueryOperatorInput = {
   ne?: Maybe<Scalars['String']>;
   nin?: Maybe<Array<Maybe<Scalars['String']>>>;
   regex?: Maybe<Scalars['String']>;
+};
+
+export type WithTypename<T extends { __typename?: any }> = { [K in Exclude<keyof T, '__typename'>]?: T[K] } & { __typename: NonNullable<T['__typename']> };
+
+export type GraphCacheKeysConfig = {
+  Continent?: (data: WithTypename<Continent>) => null | string,
+  Country?: (data: WithTypename<Country>) => null | string,
+  Language?: (data: WithTypename<Language>) => null | string,
+  State?: (data: WithTypename<State>) => null | string
+}
+
+export type GraphCacheResolvers = {
+  Query?: {
+    continent?: GraphCacheResolver<WithTypename<Query>, QueryContinentArgs, WithTypename<Continent> | string>,
+    continents?: GraphCacheResolver<WithTypename<Query>, QueryContinentsArgs, Array<WithTypename<Continent> | string>>,
+    countries?: GraphCacheResolver<WithTypename<Query>, QueryCountriesArgs, Array<WithTypename<Country> | string>>,
+    country?: GraphCacheResolver<WithTypename<Query>, QueryCountryArgs, WithTypename<Country> | string>,
+    language?: GraphCacheResolver<WithTypename<Query>, QueryLanguageArgs, WithTypename<Language> | string>,
+    languages?: GraphCacheResolver<WithTypename<Query>, QueryLanguagesArgs, Array<WithTypename<Language> | string>>
+  },
+  Continent?: {
+    code?: GraphCacheResolver<WithTypename<Continent>, Record<string, never>, Scalars['ID'] | string>,
+    countries?: GraphCacheResolver<WithTypename<Continent>, Record<string, never>, Array<WithTypename<Country> | string>>,
+    name?: GraphCacheResolver<WithTypename<Continent>, Record<string, never>, Scalars['String'] | string>
+  },
+  Country?: {
+    capital?: GraphCacheResolver<WithTypename<Country>, Record<string, never>, Scalars['String'] | string>,
+    code?: GraphCacheResolver<WithTypename<Country>, Record<string, never>, Scalars['ID'] | string>,
+    continent?: GraphCacheResolver<WithTypename<Country>, Record<string, never>, WithTypename<Continent> | string>,
+    currency?: GraphCacheResolver<WithTypename<Country>, Record<string, never>, Scalars['String'] | string>,
+    emoji?: GraphCacheResolver<WithTypename<Country>, Record<string, never>, Scalars['String'] | string>,
+    emojiU?: GraphCacheResolver<WithTypename<Country>, Record<string, never>, Scalars['String'] | string>,
+    languages?: GraphCacheResolver<WithTypename<Country>, Record<string, never>, Array<WithTypename<Language> | string>>,
+    name?: GraphCacheResolver<WithTypename<Country>, Record<string, never>, Scalars['String'] | string>,
+    native?: GraphCacheResolver<WithTypename<Country>, Record<string, never>, Scalars['String'] | string>,
+    phone?: GraphCacheResolver<WithTypename<Country>, Record<string, never>, Scalars['String'] | string>,
+    states?: GraphCacheResolver<WithTypename<Country>, Record<string, never>, Array<WithTypename<State> | string>>
+  },
+  Language?: {
+    code?: GraphCacheResolver<WithTypename<Language>, Record<string, never>, Scalars['ID'] | string>,
+    name?: GraphCacheResolver<WithTypename<Language>, Record<string, never>, Scalars['String'] | string>,
+    native?: GraphCacheResolver<WithTypename<Language>, Record<string, never>, Scalars['String'] | string>,
+    rtl?: GraphCacheResolver<WithTypename<Language>, Record<string, never>, Scalars['Boolean'] | string>
+  },
+  State?: {
+    code?: GraphCacheResolver<WithTypename<State>, Record<string, never>, Scalars['String'] | string>,
+    country?: GraphCacheResolver<WithTypename<State>, Record<string, never>, WithTypename<Country> | string>,
+    name?: GraphCacheResolver<WithTypename<State>, Record<string, never>, Scalars['String'] | string>
+  }
+};
+
+export type GraphCacheOptimisticUpdaters = {
+  {}
+};
+
+export type GraphCacheUpdaters = {
+  Mutation?: {},
+  Subscription?: {},
+};
+
+export type GraphCacheConfig = {
+  schema?: IntrospectionData,
+  updates?: GraphCacheUpdaters,
+  keys?: GraphCacheKeysConfig,
+  optimistic?: GraphCacheOptimisticUpdaters,
+  resolvers?: GraphCacheResolvers,
+  storage?: GraphCacheStorageAdapter
 };

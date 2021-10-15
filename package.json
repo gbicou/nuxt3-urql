@@ -15,6 +15,9 @@
     "@graphql-codegen/typescript-apollo-client-helpers": "^2.1.6",
     "@graphql-codegen/typescript-operations": "^2.1.8",
     "@graphql-codegen/typescript-urql": "^3.2.2",
+    "@graphql-codegen/typescript-urql-graphcache": "^2.1.6",
+    "@graphql-codegen/typescript-vue-urql": "^2.1.6",
+    "@graphql-codegen/urql-introspection": "^2.1.0",
     "graphql-tag": "^2.12.5",
     "nuxt3": "^3.0.0-27237303.6acfdcd",
     "sass": "^1.43.2",
@@ -23,6 +26,7 @@
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.3.4",
+    "@urql/exchange-graphcache": "^4.3.5",
     "@urql/vue": "^0.5.0",
     "graphql": "^15.6.1"
   }
