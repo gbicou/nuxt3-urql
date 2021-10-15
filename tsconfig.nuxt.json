@@ -1,0 +1,71 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "allowJs": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "types": [
+      "node"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "~~": [
+        "."
+      ],
+      "~~/*": [
+        "./*"
+      ],
+      "@@": [
+        "."
+      ],
+      "@@/*": [
+        "./*"
+      ],
+      "~": [
+        "."
+      ],
+      "~/*": [
+        "./*"
+      ],
+      "@": [
+        "."
+      ],
+      "@/*": [
+        "./*"
+      ],
+      "assets": [
+        "assets"
+      ],
+      "assets/*": [
+        "assets/*"
+      ],
+      "public": [
+        "."
+      ],
+      "public/*": [
+        "./*"
+      ],
+      "#app": [
+        "node_modules/nuxt3/dist/app"
+      ],
+      "#app/*": [
+        "node_modules/nuxt3/dist/app/*"
+      ],
+      "#meta": [
+        "node_modules/nuxt3/dist/meta/runtime"
+      ],
+      "#meta/*": [
+        "node_modules/nuxt3/dist/meta/runtime/*"
+      ],
+      "#build": [
+        ".nuxt"
+      ],
+      "#build/*": [
+        ".nuxt/*"
+      ]
+    }
+  }
+}

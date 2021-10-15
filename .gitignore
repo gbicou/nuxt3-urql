@@ -2,6 +2,5 @@ node_modules
 *.log
 .nuxt
 nuxt.d.ts
-tsconfig.nuxt.json
 .output
 .idea
