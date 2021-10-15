@@ -33,6 +33,11 @@ export default defineNuxtPlugin(nuxt => {
     keys: {
       Country: (data) => data.code || null
     },
+    resolvers: {
+      Query: {
+        country: (_, args) => ({__typename: "Country", code: args.code})
+      }
+    }
     // storage: process.client ? makeDefaultStorage() : undefined
   }
   const cache = graphCacheExchange(cacheConfig)
