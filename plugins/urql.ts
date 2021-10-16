@@ -1,8 +1,8 @@
-import { createClient, ssrExchange, dedupExchange, fetchExchange, cacheExchange, Client } from '@urql/core';
+import { createClient, ssrExchange, dedupExchange, fetchExchange, Client } from '@urql/core';
 import { cacheExchange as graphCacheExchange } from '@urql/exchange-graphcache'
 import { defineNuxtPlugin } from '#app'
 import schema from '../gql/introspection';
-import { GraphCacheConfig } from '../gql/schema';
+import { GraphCacheConfig } from '~/gql/schema';
 import { fetch } from 'ohmyfetch'
 
 const ssrKey = '__URQL_DATA__'
