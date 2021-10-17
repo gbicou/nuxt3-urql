@@ -1,15 +1,23 @@
 <template>
   <section class="pt-5">
-    <input
-      type="text"
-      v-model.trim="code"
-      placeholder="search code"
-    >
+    <div class="flex items-center">
+      <input
+        type="text"
+        v-model.trim="code"
+        placeholder="search code"
+      >
+      <div
+        v-if="fetching"
+        class="pl-2"
+      >
+        fetching...
+      </div>
+    </div>
     <div
       v-if="data"
       class="pt-5"
     >
-      <table>
+      <table v-if="data.countries.length">
         <tbody>
           <tr
             v-for="c in data.countries"
@@ -22,6 +30,12 @@
           </tr>
         </tbody>
       </table>
+      <div
+        v-else
+        class="text-gray-500"
+      >
+        no results
+      </div>
     </div>
   </section>
 </template>
@@ -39,7 +53,7 @@ const variables = computed(() => {
 
 const urql = useClientHandle();
 
-const { data } = await urql.useQuery({query: AllCountriesDocument, variables})
+const { data, fetching } = await urql.useQuery({query: AllCountriesDocument, variables})
 
 
 /*
