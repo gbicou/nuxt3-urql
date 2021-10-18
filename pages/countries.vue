@@ -1,39 +1,19 @@
 <template>
   <section class="pt-5">
     <div class="flex items-center">
-      <input
-        type="text"
-        v-model.trim="code"
-        placeholder="search code"
-      >
-      <div
-        v-if="fetching"
-        class="pl-2"
-      >
-        fetching...
-      </div>
+      <input type="text" v-model.trim="code" placeholder="search code">
+      <div v-if="fetching" class="pl-2">fetching...</div>
     </div>
-    <div
-      v-if="data"
-      class="pt-5"
-    >
+    <div v-if="data" class="pt-5">
       <table v-if="data.countries.length">
         <tbody>
-          <tr
-            v-for="c in data.countries"
-            :key="c.code"
-          >
-            <td class="pr-2">
-              {{ c.emoji }}
-            </td>
+          <tr v-for="c in data.countries" :key="c.code">
+            <td class="pr-2">{{ c.emoji }}</td>
             <td>{{ c.name }}</td>
           </tr>
         </tbody>
       </table>
-      <div
-        v-else
-        class="text-gray-500"
-      >
+      <div v-else class="text-gray-500">
         no results
       </div>
     </div>
