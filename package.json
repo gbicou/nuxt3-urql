@@ -23,7 +23,7 @@
     "eslint": "^8.0.1",
     "eslint-plugin-vue": "^7.19.1",
     "graphql-tag": "^2.12.5",
-    "nuxt3": "^3.0.0-27242474.571bf94",
+    "nuxt3": "^3.0.0-27242646.117b3aa",
     "sass": "^1.43.2",
     "sass-loader": "^12.2.0",
     "tailwindcss": "^2.2.17",
