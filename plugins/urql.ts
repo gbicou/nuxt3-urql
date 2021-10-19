@@ -8,7 +8,7 @@ import { fetch } from 'ohmyfetch'
 const ssrKey = '__URQL_DATA__'
 
 export default defineNuxtPlugin(nuxt => {
-  const { app } = nuxt
+  const { vueApp } = nuxt
 
   const ssr = ssrExchange({
     isClient: process.client
@@ -55,7 +55,7 @@ export default defineNuxtPlugin(nuxt => {
   })
 
   nuxt.provide('urql', client)
-  app.provide('$urql', client)
+  vueApp.provide('$urql', client)
 
 })
 
