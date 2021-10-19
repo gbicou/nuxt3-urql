@@ -1,1 +1,5 @@
 node_modules
+.nuxt
+nuxt.d.ts
+.output
+gql/**/*.ts

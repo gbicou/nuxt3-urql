@@ -714,15 +714,15 @@
     sync-fetch "0.3.1"
     tslib "~2.3.0"
 
-"@graphql-tools/batch-execute@^8.1.1":
-  version "8.1.1"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/batch-execute/-/batch-execute-8.1.1.tgz#16c62a141304f81b5eb102fcbadbcac500e2aee4"
-  integrity sha512-euRh9Fxhrpb99sbPk++hPHEZ9c0zmLfh/1zOk2BMxWOic65WlNDuFsNV2S6ddlruu9PNL6dEpBteiTfRWxpMfw==
+"@graphql-tools/batch-execute@^8.2.0":
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/batch-execute/-/batch-execute-8.2.0.tgz#183e7905f62b65a868223e65fc966f6b5f2b7ca0"
+  integrity sha512-fxOaDQdYh9uainAufctSaeNKrm784X3lRQzfbldBQ+6JxTA6xZPsGkFlyqBIMKd/TR4ZiaeCf2sC0eHoLqKUOQ==
   dependencies:
-    "@graphql-tools/utils" "^8.2.4"
+    "@graphql-tools/utils" "^8.4.0"
     dataloader "2.0.0"
     tslib "~2.3.0"
-    value-or-promise "1.0.10"
+    value-or-promise "1.0.11"
 
 "@graphql-tools/code-file-loader@^7.0.6":
   version "7.2.1"
@@ -735,14 +735,14 @@
     tslib "~2.3.0"
     unixify "^1.0.0"
 
-"@graphql-tools/delegate@^8.2.0":
-  version "8.2.3"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/delegate/-/delegate-8.2.3.tgz#70550f9536563a98a449818869eec530c2a05408"
-  integrity sha512-CS0B7oAA3n8mHhufY54j0/oxBK0aQcWy8oYyGT36ZM+MaTXQL5Wf6AlzMqvCtmBnQxGOyn/b2o0wsZ41HVH3nA==
+"@graphql-tools/delegate@^8.2.0", "@graphql-tools/delegate@^8.3.0":
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/delegate/-/delegate-8.3.0.tgz#9581325c7516b8c36e8acf45df0e87801d435588"
+  integrity sha512-0WPX46yK5nzrqpA3v1AXZ4+m4DxyNtpDwJ6VvKPKPQ5Bp0UkfVUR8B528X8+/WuPA0L0hszw15KybeNRjOXQ9A==
   dependencies:
-    "@graphql-tools/batch-execute" "^8.1.1"
-    "@graphql-tools/schema" "^8.2.0"
-    "@graphql-tools/utils" "^8.3.0"
+    "@graphql-tools/batch-execute" "^8.2.0"
+    "@graphql-tools/schema" "^8.3.0"
+    "@graphql-tools/utils" "^8.4.0"
     dataloader "2.0.0"
     tslib "~2.3.0"
     value-or-promise "1.0.11"
@@ -792,11 +792,11 @@
     tslib "~2.3.0"
 
 "@graphql-tools/import@^6.5.4":
-  version "6.5.4"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/import/-/import-6.5.4.tgz#f80b12f6d0cb464926b2fe3bb114a449f8d59676"
-  integrity sha512-2I3m/RFisxMoRQAAsZi807Kqc4i8Ih/RoliqVBU08nYSkMg/TH67/BbV54pVUrlRF44o9GYjGaHlr5p2mwDoIQ==
+  version "6.5.5"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/import/-/import-6.5.5.tgz#50bd6b9ebe4a5bb781c2a06ee6f91da00fb4e932"
+  integrity sha512-BG6HVm9Kf2X9RqaQ+qqmxgiQnTibW3yxL/W+xL4HBT7pmTVaNlIck6KaXmK4buMN4IGW0pujTK8b4/Uelol60A==
   dependencies:
-    "@graphql-tools/utils" "8.3.0"
+    "@graphql-tools/utils" "8.4.0"
     resolve-from "5.0.0"
     tslib "~2.3.0"
 
@@ -811,21 +811,21 @@
     unixify "^1.0.0"
 
 "@graphql-tools/load@^7.1.0", "@graphql-tools/load@^7.3.0":
-  version "7.3.2"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/load/-/load-7.3.2.tgz#0edd9c0b464111968bfca148457a4c97e23fc030"
-  integrity sha512-tB03MGOlgKkoP6YyzIl/saTYshuLWxQy2JebhYL6gy3XsWmSE7ae1WAL3p+G0pyfw66HaMu905omyulu1VkfXw==
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/load/-/load-7.4.0.tgz#259e2b0b5efe1b7d1834ca462ff22785a42e5c7e"
+  integrity sha512-f1RpBa/TIHIRxzcmL+pRj+021P8lx1Tu0gQ/6tzEHMlvh8AhPchXlOiASWBWDVo0J7+fSL+KQrlVORQ7VVMT0w==
   dependencies:
-    "@graphql-tools/schema" "8.2.0"
-    "@graphql-tools/utils" "^8.2.3"
+    "@graphql-tools/schema" "8.3.0"
+    "@graphql-tools/utils" "^8.4.0"
     p-limit "3.1.0"
     tslib "~2.3.0"
 
-"@graphql-tools/merge@^6.2.16 || ^7.0.0 || ^8.0.0", "@graphql-tools/merge@^8.1.0":
-  version "8.1.2"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/merge/-/merge-8.1.2.tgz#50f5763927c51de764d09c5bfd20261671976e24"
-  integrity sha512-kFLd4kKNJXYXnKIhM8q9zgGAtbLmsy3WmGdDxYq3YHBJUogucAxnivQYyRIseUq37KGmSAIWu3pBQ23TKGsGOw==
+"@graphql-tools/merge@^6.2.16 || ^7.0.0 || ^8.0.0", "@graphql-tools/merge@^8.2.0":
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/merge/-/merge-8.2.0.tgz#8f6638eeecf19f59fef28598024308e0452dd0a2"
+  integrity sha512-nfMLYF7zczjnIbChZtqbvozRfuRweMD1Fe9HHd4RXd3Tcsj6E17srW0QJfxUoIIWh4pitj+XwZAwhj1PWBDU7g==
   dependencies:
-    "@graphql-tools/utils" "^8.2.2"
+    "@graphql-tools/utils" "^8.4.0"
     tslib "~2.3.0"
 
 "@graphql-tools/optimize@^1.0.1":
@@ -870,15 +870,15 @@
     relay-compiler "11.0.2"
     tslib "~2.3.0"
 
-"@graphql-tools/schema@8.2.0", "@graphql-tools/schema@^8.1.2", "@graphql-tools/schema@^8.2.0":
-  version "8.2.0"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/schema/-/schema-8.2.0.tgz#ae75cbb2df6cee9ed6d89fce56be467ab23758dc"
-  integrity sha512-ufmI5mJQa8NJczzfkh0pUttKvspqDcT5LLakA3jUmOrrE4d4NVj6onZlazdTzF5sAepSNqanFnwhrxZpCAJMKg==
+"@graphql-tools/schema@8.3.0", "@graphql-tools/schema@^8.1.2", "@graphql-tools/schema@^8.3.0":
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/schema/-/schema-8.3.0.tgz#ddf4297859c6d7ac1ebbbd91460260ed424115db"
+  integrity sha512-OJD4Q1Xa3sffRiHzy0sskZz9ZWeqaujINfoim4CTk5Y9es1LS+WnKi25wVhmL2SGzzmKuAv7oDn+dpQAlM+Gfw==
   dependencies:
-    "@graphql-tools/merge" "^8.1.0"
-    "@graphql-tools/utils" "^8.2.0"
+    "@graphql-tools/merge" "^8.2.0"
+    "@graphql-tools/utils" "^8.4.0"
     tslib "~2.3.0"
-    value-or-promise "1.0.10"
+    value-or-promise "1.0.11"
 
 "@graphql-tools/url-loader@^7.0.11", "@graphql-tools/url-loader@^7.0.3", "@graphql-tools/url-loader@^7.1.0":
   version "7.2.0"
@@ -909,23 +909,23 @@
     value-or-promise "1.0.10"
     ws "8.2.2"
 
-"@graphql-tools/utils@8.3.0", "@graphql-tools/utils@^8.0.1", "@graphql-tools/utils@^8.1.1", "@graphql-tools/utils@^8.2.0", "@graphql-tools/utils@^8.2.2", "@graphql-tools/utils@^8.2.3", "@graphql-tools/utils@^8.2.4", "@graphql-tools/utils@^8.2.5", "@graphql-tools/utils@^8.3.0":
-  version "8.3.0"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-8.3.0.tgz#382111bc4a93f248e3641740a5300f44286bffae"
-  integrity sha512-ksE0RxS0AFllo6KIJjvQsRgcUAzoyZUgUrDbCngv4SaQwyX9YxTfddTLN4uQmbiZB9h25fPp/Xgeyaa3ARCzgg==
+"@graphql-tools/utils@8.4.0", "@graphql-tools/utils@^8.0.1", "@graphql-tools/utils@^8.1.1", "@graphql-tools/utils@^8.2.0", "@graphql-tools/utils@^8.2.5", "@graphql-tools/utils@^8.3.0", "@graphql-tools/utils@^8.4.0":
+  version "8.4.0"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-8.4.0.tgz#bcf104f4e882a4d96ce8a4bc651907b883b180f0"
+  integrity sha512-rHp4aOdStGDj4xR4PbLm0cyasfTKQUcEKSAP6Ls/83/rmCGdZn9lMxJUSnyK2OfBzpS28kBmSTMaYQ+MeXUFlA==
   dependencies:
     tslib "~2.3.0"
 
 "@graphql-tools/wrap@^8.1.0":
-  version "8.1.1"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/wrap/-/wrap-8.1.1.tgz#7003033372d6ef984065028430429655614af899"
-  integrity sha512-Z2ylFug2iHMbpcc2Bs/avNTKmhoJrUO6l0JrQbgiZZJWBaBz6yw+fyfL/kCLQluiU5/SXsvUxxPGBQ9tqb864g==
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/wrap/-/wrap-8.2.0.tgz#01984593bd3a44a0b9471eaf6746297f71714e9f"
+  integrity sha512-fThVEDZ93UI0plDBfplj9eKZX4QkbD3NLvW1qa3HDmMlUa2uH2vWWf0RRk6o5Hn9shYrTbJtl7gIc/nxxfZmXA==
   dependencies:
-    "@graphql-tools/delegate" "^8.2.0"
-    "@graphql-tools/schema" "^8.2.0"
-    "@graphql-tools/utils" "^8.2.0"
+    "@graphql-tools/delegate" "^8.3.0"
+    "@graphql-tools/schema" "^8.3.0"
+    "@graphql-tools/utils" "^8.4.0"
     tslib "~2.3.0"
-    value-or-promise "1.0.10"
+    value-or-promise "1.0.11"
 
 "@graphql-typed-document-node/core@^3.1.0":
   version "3.1.0"
@@ -1019,10 +1019,10 @@
     error-stack-parser "^2.0.0"
     string-width "^4.2.3"
 
-"@nuxt/kit@npm:@nuxt/kit-edge@3.0.0-27244105.2256b2b":
-  version "3.0.0-27244105.2256b2b"
-  resolved "https://registry.yarnpkg.com/@nuxt/kit-edge/-/kit-edge-3.0.0-27244105.2256b2b.tgz#bb5e2b01bdd7bfd64f6421c0a7d04a0eb18ba057"
-  integrity sha512-8Gs6CPkbugtbN9gIHx0xjgT90iHBFIvKTB8R367qJx5NhF005qsVh7Ehix4RgtlboMsmESQVgEN4PkuJe4tw0A==
+"@nuxt/kit@npm:@nuxt/kit-edge@3.0.0-27244261.c49f9ca":
+  version "3.0.0-27244261.c49f9ca"
+  resolved "https://registry.yarnpkg.com/@nuxt/kit-edge/-/kit-edge-3.0.0-27244261.c49f9ca.tgz#8065fff95e1ca88c2a28b3826a7cd2667334b1b0"
+  integrity sha512-nfTpPSqqz66quBbV1ocU+E68eMSivlf2IA9czgONIb/S48z+xQuIRUJxRLEZeKOMiaen/5YFRooTxxvXod0V7w==
   dependencies:
     consola "^2.15.3"
     create-require "^1.1.1"
@@ -1044,16 +1044,16 @@
     unctx "^1.0.2"
     untyped "^0.2.9"
 
-"@nuxt/nitro@npm:@nuxt/nitro-edge@3.0.0-27244105.2256b2b":
-  version "3.0.0-27244105.2256b2b"
-  resolved "https://registry.yarnpkg.com/@nuxt/nitro-edge/-/nitro-edge-3.0.0-27244105.2256b2b.tgz#63ff75cf529a4def8f922df95c298bc99d237add"
-  integrity sha512-M8LmEP+5KhupxHAhgbHhWclJUzbRRd1IDJbNPWY6WDPQy7/dy1rWGFcPcZrhq6B493bK84D/Ih4kksit1QalTA==
+"@nuxt/nitro@npm:@nuxt/nitro-edge@3.0.0-27244261.c49f9ca":
+  version "3.0.0-27244261.c49f9ca"
+  resolved "https://registry.yarnpkg.com/@nuxt/nitro-edge/-/nitro-edge-3.0.0-27244261.c49f9ca.tgz#306e897d506314270fc436f13be9811632056673"
+  integrity sha512-bpSC1AQPu2XGqanSiVzXjdMb8EIwbZJOiVU0WxgqV1KwKbLupEAdqHmYcnX7lt7R8glhziSttYVGW2gxON75kQ==
   dependencies:
     "@cloudflare/kv-asset-handler" "^0.1.3"
     "@netlify/functions" "^0.7.2"
     "@nuxt/design" "0.1.3"
     "@nuxt/devalue" "^2.0.0"
-    "@nuxt/kit" "npm:@nuxt/kit-edge@3.0.0-27244105.2256b2b"
+    "@nuxt/kit" "npm:@nuxt/kit-edge@3.0.0-27244261.c49f9ca"
     "@rollup/plugin-alias" "^3.1.5"
     "@rollup/plugin-commonjs" "^21.0.0"
     "@rollup/plugin-inject" "^4.0.2"
@@ -1107,12 +1107,12 @@
     vue-bundle-renderer "^0.3.2"
     vue-server-renderer "^2.6.14"
 
-"@nuxt/vite-builder@npm:@nuxt/vite-builder-edge@3.0.0-27244105.2256b2b":
-  version "3.0.0-27244105.2256b2b"
-  resolved "https://registry.yarnpkg.com/@nuxt/vite-builder-edge/-/vite-builder-edge-3.0.0-27244105.2256b2b.tgz#6015f01617a3283d4082f56236d198a50c5caa37"
-  integrity sha512-BzaBRwpUJ0mb7DB49EhokNecstBHNKkezW/GIk6M4uJSbmAyD+WSq4NMuebM5rnjdGhP9IOzYGbF0oh8ODDwkw==
+"@nuxt/vite-builder@npm:@nuxt/vite-builder-edge@3.0.0-27244261.c49f9ca":
+  version "3.0.0-27244261.c49f9ca"
+  resolved "https://registry.yarnpkg.com/@nuxt/vite-builder-edge/-/vite-builder-edge-3.0.0-27244261.c49f9ca.tgz#8d87474e61dcf466e049209e2d97cb6d707e7f4a"
+  integrity sha512-cOAQHqbT4q76ToXzEKZ327IB+rLU1mJoIX9ZVeUR3jnJ4tDE8hVIeF3Rb4yLBY8VoHQ67uu3LCmMZBpskSyNxQ==
   dependencies:
-    "@nuxt/kit" "npm:@nuxt/kit-edge@3.0.0-27244105.2256b2b"
+    "@nuxt/kit" "npm:@nuxt/kit-edge@3.0.0-27244261.c49f9ca"
     "@vitejs/plugin-vue" "^1.9.3"
     "@vitejs/plugin-vue-jsx" "^1.2.0"
     autoprefixer "^10.3.7"
@@ -1130,14 +1130,14 @@
     vite "^2.6.10"
     vue "3.2.20"
 
-"@nuxt/webpack-builder@npm:@nuxt/webpack-builder-edge@3.0.0-27244105.2256b2b":
-  version "3.0.0-27244105.2256b2b"
-  resolved "https://registry.yarnpkg.com/@nuxt/webpack-builder-edge/-/webpack-builder-edge-3.0.0-27244105.2256b2b.tgz#83a24e565a8b79c5bc756da4c0a0ff3c9e001a0e"
-  integrity sha512-oxo7YjWCIiciEBcTj7eyf00Lt+HCc3FraP/+pdE/j1fmql44iZFMsPXfNB2gewk9pTojeYKfc2Ux62yMiu1WWw==
+"@nuxt/webpack-builder@npm:@nuxt/webpack-builder-edge@3.0.0-27244261.c49f9ca":
+  version "3.0.0-27244261.c49f9ca"
+  resolved "https://registry.yarnpkg.com/@nuxt/webpack-builder-edge/-/webpack-builder-edge-3.0.0-27244261.c49f9ca.tgz#5f6b1d7f4dc0f40e702a26d6b9584325baac3d7a"
+  integrity sha512-NUymrTsLZbMdqrVJ2ZOdLL4m96XwigKajpgEVfhfdPRTrL9Ydiy3K0bOb4aUED19B85coUnWjQyWKi/1QVvHjg==
   dependencies:
     "@babel/core" "^7.15.8"
     "@nuxt/friendly-errors-webpack-plugin" "^2.5.2"
-    "@nuxt/kit" "npm:@nuxt/kit-edge@3.0.0-27244105.2256b2b"
+    "@nuxt/kit" "npm:@nuxt/kit-edge@3.0.0-27244261.c49f9ca"
     "@vue/babel-preset-jsx" "^1.2.4"
     autoprefixer "^10.3.7"
     babel-loader "^8.2.2"
@@ -1181,9 +1181,9 @@
   integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
 
 "@rollup/plugin-alias@^3.1.5":
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/@rollup/plugin-alias/-/plugin-alias-3.1.5.tgz#73356a3a1eab2e1e2fd952f9f53cd89fc740d952"
-  integrity sha512-yzUaSvCC/LJPbl9rnzX3HN7vy0tq7EzHoEiQl1ofh4n5r2Rd5bj/+zcJgaGA76xbw95/JjWQyvHg9rOJp2y0oQ==
+  version "3.1.7"
+  resolved "https://registry.yarnpkg.com/@rollup/plugin-alias/-/plugin-alias-3.1.7.tgz#9aa159f1da4bacaa27c04ad4a84f078bd9b7a935"
+  integrity sha512-9EZnC9KvM7HK1JmkcpwYvvGLVjyYAR5vAc2NkdnjyOstQpOb+ff0ZB754lmUGEGT5brqeJJUQ0qU2aA6afIRRw==
   dependencies:
     slash "^3.0.0"
 
@@ -1201,13 +1201,13 @@
     resolve "^1.17.0"
 
 "@rollup/plugin-inject@^4.0.2":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@rollup/plugin-inject/-/plugin-inject-4.0.2.tgz#55b21bb244a07675f7fdde577db929c82fc17395"
-  integrity sha512-TSLMA8waJ7Dmgmoc8JfPnwUwVZgLjjIAM6MqeIFqPO2ODK36JqE0Cf2F54UTgCUuW8da93Mvoj75a6KAVWgylw==
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@rollup/plugin-inject/-/plugin-inject-4.0.3.tgz#6f04ebc14790a8bf892286fe9b8c0eb1ddf4d5ce"
+  integrity sha512-lzMXmj0LZjd67MI+M8H9dk/oCxR0TYqYAdZ6ZOejWQLSUtud+FUPu4NCMAO8KyWWAalFo8ean7yFHCMvCNsCZw==
   dependencies:
-    "@rollup/pluginutils" "^3.0.4"
-    estree-walker "^1.0.1"
-    magic-string "^0.25.5"
+    "@rollup/pluginutils" "^3.1.0"
+    estree-walker "^2.0.1"
+    magic-string "^0.25.7"
 
 "@rollup/plugin-json@^4.1.0":
   version "4.1.0"
@@ -1217,9 +1217,9 @@
     "@rollup/pluginutils" "^3.0.8"
 
 "@rollup/plugin-node-resolve@^13.0.5":
-  version "13.0.5"
-  resolved "https://registry.yarnpkg.com/@rollup/plugin-node-resolve/-/plugin-node-resolve-13.0.5.tgz#016abe58796a4ff544d6beac7818921e3d3777fc"
-  integrity sha512-mVaw6uxtvuGx/XCI4qBQXsDZJUfyx5vp39iE0J/7Hd6wDhEbjHr6aES7Nr9yWbuE0BY+oKp6N7Bq6jX5NCGNmQ==
+  version "13.0.6"
+  resolved "https://registry.yarnpkg.com/@rollup/plugin-node-resolve/-/plugin-node-resolve-13.0.6.tgz#29629070bb767567be8157f575cfa8f2b8e9ef77"
+  integrity sha512-sFsPDMPd4gMqnh2gS0uIxELnoRUp5kBl5knxD2EO0778G1oOJv4G1vyT2cpWz75OU2jDVcXhjVUuTAczGyFNKA==
   dependencies:
     "@rollup/pluginutils" "^3.1.0"
     "@types/resolve" "1.17.1"
@@ -1246,7 +1246,7 @@
   resolved "https://registry.yarnpkg.com/@rollup/plugin-wasm/-/plugin-wasm-5.1.2.tgz#5ebd767a14eb7cc98f45aee817e3efbe15c944d8"
   integrity sha512-eiOuMHBNY0EGTq3LCebg4IQ6/SOvKjmGetzqKajJWcbDQkrQZvHihZKKnBJYY7NuuvjNqCLdEViYr5aAZms63g==
 
-"@rollup/pluginutils@^3.0.4", "@rollup/pluginutils@^3.0.8", "@rollup/pluginutils@^3.1.0":
+"@rollup/pluginutils@^3.0.8", "@rollup/pluginutils@^3.1.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-3.1.0.tgz#706b4524ee6dc8b103b3c995533e5ad680c02b9b"
   integrity sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==
@@ -2664,9 +2664,9 @@ color@^4.0.1:
     color-string "^1.6.0"
 
 colord@^2.0.1, colord@^2.6:
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/colord/-/colord-2.9.0.tgz#35925baaae248170ea1b492deb1cc235d71b546e"
-  integrity sha512-D8guC3WXLzW892WdoQD+RhIRlfeQSZnTEOq+KxX6fak9ijrHt30oKF9L7jQovCA13pSIJJVFVEYzp4Y4f4k+Yg==
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/colord/-/colord-2.9.1.tgz#c961ea0efeb57c9f0f4834458f26cb9cc4a3f90e"
+  integrity sha512-4LBMSt09vR0uLnPVkOUBnmxgoaeN4ewRbx801wY/bXcltXfpR/G46OdWn96XpYmCWuYvO46aBZP4NgX8HpNAcw==
 
 colorette@^1.2.2:
   version "1.4.0"
@@ -4166,9 +4166,9 @@ graphql-tag@^2.11.0, graphql-tag@^2.12.5:
     tslib "^2.1.0"
 
 graphql-ws@^5.4.1:
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/graphql-ws/-/graphql-ws-5.5.0.tgz#79f10248d23d104369eaef93acb9f887276a2c42"
-  integrity sha512-WQepPMGQQoqS2VsrI2I3RMLCVz3CW4/6ZqGV6ABDOwH4R62DzjxwMlwZbj6vhSI/7IM3/C911yITwgs77iO/hw==
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/graphql-ws/-/graphql-ws-5.5.1.tgz#f486fbcabe4ad31b661d1a88aadf0411f17fc219"
+  integrity sha512-QP6OvCnqkdazSoZ6QboWVkCvEmDCOe6u41MzuhkCkYg+jZZbYafUlt3uC/7mvKLrlIyR44QgHOMALqBgg+Ab/w==
 
 graphql@^15.6.1:
   version "15.6.1"
@@ -5323,7 +5323,7 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
-magic-string@^0.25.5, magic-string@^0.25.7:
+magic-string@^0.25.7:
   version "0.25.7"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.25.7.tgz#3f497d6fd34c669c6798dcb821f2ef31f5445051"
   integrity sha512-4CrMT5DOHTDk4HYDlzmwu4FVCcIYI8gauveasrdCu2IKIFOJ3f0v/8MDGJCDL9oD2ppz/Av1b0Nj345H9M+XIA==
@@ -5742,25 +5742,25 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
-"nuxi@npm:nuxi-edge@3.0.0-27244105.2256b2b":
-  version "3.0.0-27244105.2256b2b"
-  resolved "https://registry.yarnpkg.com/nuxi-edge/-/nuxi-edge-3.0.0-27244105.2256b2b.tgz#5b6f1ecf7114a6284d752c5ddf5ea2250cd7b8a9"
-  integrity sha512-aFzLxccAu7KuZOwLkcteEWdTNOCG2Mt2Pz6X+drhSn7xINdLJjmup6aFliXyHKEXMrgmMzi6ltbbXIqv1RV31w==
+"nuxi@npm:nuxi-edge@3.0.0-27244261.c49f9ca":
+  version "3.0.0-27244261.c49f9ca"
+  resolved "https://registry.yarnpkg.com/nuxi-edge/-/nuxi-edge-3.0.0-27244261.c49f9ca.tgz#ccd11148a416eb36643ad546d1d8e71e9711fc49"
+  integrity sha512-mEZ5dV8pj2Gz+9r2LpeGqsQx7lvMU6yn7j38vMz6+dHvSuNsO/9NnsExAdPQmpAm7DgVdy5LdeTfLlT108szHw==
   dependencies:
     semver "^7.3.5"
   optionalDependencies:
     fsevents "~2.3.2"
 
-nuxt3@^3.0.0-27244105.2256b2b:
-  version "3.0.0-27244105.2256b2b"
-  resolved "https://registry.yarnpkg.com/nuxt3/-/nuxt3-3.0.0-27244105.2256b2b.tgz#8f4b948efc4e958fe8613df46ed92a87e220b9d6"
-  integrity sha512-DLuYeM4DrzACugjyEW3VbBU+z3+dXfmMruqLx4JzSI+BoDs+DFgtKu5nDbCyaIQNhvW5Fa5rhmBEMThCKTi9jg==
+nuxt3@^3.0.0-27244261.c49f9ca:
+  version "3.0.0-27244261.c49f9ca"
+  resolved "https://registry.yarnpkg.com/nuxt3/-/nuxt3-3.0.0-27244261.c49f9ca.tgz#e6f108bbe9d4ad377d7784cdd3b3cf6178e0fe69"
+  integrity sha512-vskJYdR8qCGshpSmokNCCBTWCzU2tCRdB0ekJIAiOQS9bcfQqETTz536wjbcalfG1o4nh6W1Q8rr1MNcgQe59w==
   dependencies:
     "@nuxt/design" "^0.1.3"
-    "@nuxt/kit" "npm:@nuxt/kit-edge@3.0.0-27244105.2256b2b"
-    "@nuxt/nitro" "npm:@nuxt/nitro-edge@3.0.0-27244105.2256b2b"
-    "@nuxt/vite-builder" "npm:@nuxt/vite-builder-edge@3.0.0-27244105.2256b2b"
-    "@nuxt/webpack-builder" "npm:@nuxt/webpack-builder-edge@3.0.0-27244105.2256b2b"
+    "@nuxt/kit" "npm:@nuxt/kit-edge@3.0.0-27244261.c49f9ca"
+    "@nuxt/nitro" "npm:@nuxt/nitro-edge@3.0.0-27244261.c49f9ca"
+    "@nuxt/vite-builder" "npm:@nuxt/vite-builder-edge@3.0.0-27244261.c49f9ca"
+    "@nuxt/webpack-builder" "npm:@nuxt/webpack-builder-edge@3.0.0-27244261.c49f9ca"
     "@vue/reactivity" "3.2.20"
     "@vue/shared" "3.2.20"
     "@vueuse/head" "^0.6.0"
@@ -5773,7 +5773,7 @@ nuxt3@^3.0.0-27244105.2256b2b:
     ignore "^5.1.8"
     mlly "^0.2.10"
     murmurhash-es "^0.1.1"
-    nuxi "npm:nuxi-edge@3.0.0-27244105.2256b2b"
+    nuxi "npm:nuxi-edge@3.0.0-27244261.c49f9ca"
     ohmyfetch "^0.3.1"
     pathe "^0.2.0"
     scule "^0.2.1"
@@ -7984,9 +7984,9 @@ webpack-virtual-modules@^0.4.3:
   integrity sha512-5NUqC2JquIL2pBAAo/VfBP6KuGkHIZQXW/lNKupLPfhViwh8wNsu0BObtl09yuKZszeEUfbXz8xhrHvSG16Nqw==
 
 webpack@^5.58.2:
-  version "5.58.2"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.58.2.tgz#6b4af12fc9bd5cbedc00dc0a2fc2b9592db16b44"
-  integrity sha512-3S6e9Vo1W2ijk4F4PPWRIu6D/uGgqaPmqw+av3W3jLDujuNkdxX5h5c+RQ6GkjVR+WwIPOfgY8av+j5j4tMqJw==
+  version "5.59.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.59.0.tgz#a5038fc0d4d9350ee528e7e1e0282080c63efcf5"
+  integrity sha512-2HiFHKnWIb/cBfOfgssQn8XIRvntISXiz//F1q1+hKMs+uzC1zlVCJZEP7XqI1wzrDyc/ZdB4G+MYtz5biJxCA==
   dependencies:
     "@types/eslint-scope" "^3.7.0"
     "@types/estree" "^0.0.50"

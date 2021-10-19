@@ -1,19 +1,15 @@
-import { defineNuxtConfig } from 'nuxt3'
+import { defineNuxtConfig } from "nuxt3";
 
 export default defineNuxtConfig({
-    css: [
-        'assets/tailwind.css'
-    ],
-    build: {
-        postcss: {
-            postcssOptions: {
-                plugins: {
-                    tailwindcss: {}
-                }
-            }
+  css: ["assets/tailwind.css"],
+  build: {
+    postcss: {
+      postcssOptions: {
+        plugins: {
+          tailwindcss: {},
         },
-        transpile: [
-            '@urql/vue'
-        ],
+      },
     },
-})
+    transpile: ["@urql/vue"],
+  },
+});

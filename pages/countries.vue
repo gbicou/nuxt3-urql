@@ -13,19 +13,17 @@
           </tr>
         </tbody>
       </table>
-      <div v-else class="text-gray-500">
-        no results
-      </div>
+      <div v-else class="text-gray-500">no results</div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from "vue"
-import {AllCountriesDocument} from "~/gql/queries/all-countries";
-import {useClientHandle} from "@urql/vue";
+import { ref, computed } from "vue";
+import { AllCountriesDocument } from "~/gql/queries/all-countries";
+import { useClientHandle } from "@urql/vue";
 
-const code = ref('')
+const code = ref("");
 
 const variables = computed(() => {
   return code.value ? {filter: {code: {eq: code.value.toUpperCase()}}} : {}
@@ -49,5 +47,4 @@ const data = await useAsyncData('countriesg', ctx => {
   return ctx.$urql.query(AllCountriesDocument).toPromise()
 })
 */
-
 </script>
