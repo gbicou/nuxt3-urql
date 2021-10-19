@@ -48,4 +48,9 @@ Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
 
 ## Demo
 
-Application is deployed on vercel @ https://nuxt3-urql.vercel.app/
+Application is deployed :
+
+* on vercel @ https://nuxt3-urql.vercel.app/
+* on netlify @ https://nuxt3-urql.netlify.app/
+
+
