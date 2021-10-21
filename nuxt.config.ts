@@ -10,6 +10,6 @@ export default defineNuxtConfig({
         },
       },
     },
-    transpile: ["@urql/vue"],
+    transpile: [/@urql/]
   },
 });
