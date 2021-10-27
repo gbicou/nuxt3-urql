@@ -4,3 +4,9 @@ node_modules
 nuxt.d.ts
 .output
 .idea
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
