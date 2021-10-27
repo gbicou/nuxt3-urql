@@ -5628,7 +5628,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql-tag@npm:^2.11.0, graphql-tag@npm:^2.12.5":
+"graphql-tag@npm:2.12.5, graphql-tag@npm:^2.11.0":
   version: 2.12.5
   resolution: "graphql-tag@npm:2.12.5"
   dependencies:
@@ -9295,7 +9295,7 @@ __metadata:
     eslint: 8.1.0
     eslint-plugin-vue: 7.20.0
     graphql: 15.7.0
-    graphql-tag: ^2.12.5
+    graphql-tag: 2.12.5
     nuxt3: 3.0.0-27254511.41ff3b8
     typescript: 4.4.4
     water.css: 2.1.1
