@@ -4,6 +4,6 @@
     "example"
   ],
   "scripts": {
-    "build": "yarn workspace example nuxt build .."
+    "build": "nuxt build example && mv ./example/.vercel_build_output ./.vercel_build_output"
   }
 }
