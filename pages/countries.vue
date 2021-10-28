@@ -8,7 +8,7 @@
       <table v-if="data.countries.length">
         <thead>
           <tr>
-            <th style="width: 2em;">Flag</th>
+            <th style="width: 2em; white-space: nowrap">Flag</th>
             <th>Name</th>
           </tr>
         </thead>
