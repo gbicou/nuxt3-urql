@@ -1,35 +1,6 @@
 {
   "private": true,
-  "scripts": {
-    "dev": "nuxt dev",
-    "build": "nuxt build",
-    "start": "node .output/server/index.mjs",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.vue"
-  },
-  "devDependencies": {
-    "@graphql-codegen/cli": "^2.2.1",
-    "@graphql-codegen/fragment-matcher": "^3.1.0",
-    "@graphql-codegen/near-operation-file-preset": "^2.1.6",
-    "@graphql-codegen/typed-document-node": "^2.1.6",
-    "@graphql-codegen/typescript": "^2.2.4",
-    "@graphql-codegen/typescript-apollo-client-helpers": "^2.1.6",
-    "@graphql-codegen/typescript-operations": "^2.1.8",
-    "@graphql-codegen/typescript-urql": "^3.2.2",
-    "@graphql-codegen/typescript-urql-graphcache": "^2.1.6",
-    "@graphql-codegen/typescript-vue-urql": "^2.1.6",
-    "@graphql-codegen/urql-introspection": "^2.1.0",
-    "@typescript-eslint/eslint-plugin": "^5.2.0",
-    "@typescript-eslint/parser": "^5.2.0",
-    "@urql/exchange-graphcache": "^4.3.5",
-    "@urql/vue": "^0.6.0",
-    "eslint": "^8.1.0",
-    "eslint-plugin-vue": "^7.20.0",
-    "graphql-tag": "^2.12.5",
-    "nuxt3": "^3.0.0-27255771.f78ec93",
-    "typescript": "^4.4.4",
-    "water.css": "^2.1.1"
-  },
-  "dependencies": {
-    "graphql": "^15.7.1"
-  }
+  "workspaces": [
+    "example"
+  ]
 }

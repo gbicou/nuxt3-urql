@@ -1,11 +1,2 @@
 node_modules
-*.log
-.nuxt
-.output
 .idea
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
