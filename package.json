@@ -2,5 +2,9 @@
   "private": true,
   "workspaces": [
     "example"
-  ]
+  ],
+  "scripts": {
+    "build": "yarn workspace example build",
+    "start": "yarn workspace example node .output/server/index.mjs"
+  }
 }
