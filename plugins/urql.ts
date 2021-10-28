@@ -3,6 +3,7 @@ import { cacheExchange as graphCacheExchange } from '@urql/exchange-graphcache'
 import { defineNuxtPlugin } from '#app'
 import schema from '../gql/introspection';
 import { GraphCacheConfig } from '~/gql/schema';
+import { ref } from "vue";
 
 const ssrKey = '__URQL_DATA__'
 
@@ -53,7 +54,7 @@ export default defineNuxtPlugin(nuxt => {
   })
 
   nuxt.provide('urql', client)
-  vueApp.provide('$urql', client)
+  vueApp.provide('$urql', ref(client))
 
 })
 
