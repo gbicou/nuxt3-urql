@@ -6,6 +6,14 @@
     "require": "./dist/nuxt3-urql.cjs",
     "import": "./dist/nuxt3-urql.mjs"
   },
+  "main": "./dist/nuxt3-urql.cjs",
+  "module": "./dist/nuxt3-urql.mjs",
+  "types": "./dist/nuxt3-urql.d.ts",
+  "files": [
+    "dist/*.cjs",
+    "dist/*.mjs",
+    "dist/*.d.ts"
+  ],
   "scripts": {
     "build": "unbuild"
   },
@@ -13,6 +21,7 @@
     "unbuild": "^0.5.11"
   },
   "dependencies": {
-    "@nuxt/kit-edge": "^3.0.0-27257216.f5aea9f"
+    "@urql/vue": "^0.6.0",
+    "nuxt3": "^3.0.0-27258467.4e424d0"
   }
 }
