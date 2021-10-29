@@ -4,6 +4,6 @@
     "example"
   ],
   "scripts": {
-    "build": "nuxt build example && mv ./example/.vercel_build_output ./.vercel_build_output"
+    "vercel-build": "nuxt build example && mv ./example/.vercel_build_output ./.vercel_build_output"
   }
 }
