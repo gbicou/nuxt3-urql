@@ -29,7 +29,8 @@
     "graphql-tag": "^2.12.5",
     "nuxt3": "^3.0.0-27255771.f78ec93",
     "typescript": "^4.4.4",
-    "water.css": "^2.1.1"
+    "water.css": "^2.1.1",
+    "nuxt3-urql": "0.0.1"
   },
   "dependencies": {
     "graphql": "^15.7.1"

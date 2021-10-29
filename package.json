@@ -1,9 +1,10 @@
 {
   "private": true,
   "workspaces": [
+    "module",
     "example"
   ],
   "scripts": {
-    "vercel-build": "nuxt build example && mv ./example/.vercel_build_output ./.vercel_build_output"
+    "vercel:build": "yarn workspaces run build && mv ./example/.vercel_build_output ./.vercel_build_output"
   }
 }
