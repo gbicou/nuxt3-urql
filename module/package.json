@@ -3,8 +3,14 @@
   "name": "nuxt3-urql",
   "version": "0.0.1",
   "exports": {
-    "require": "./dist/nuxt3-urql.cjs",
-    "import": "./dist/nuxt3-urql.mjs"
+    ".": {
+      "require": "./dist/nuxt3-urql.cjs",
+      "import": "./dist/nuxt3-urql.mjs"
+    },
+    "./plugin": {
+      "require": "./dist/plugin.cjs",
+      "import": "./dist/plugin.mjs"
+    }
   },
   "main": "./dist/nuxt3-urql.cjs",
   "module": "./dist/nuxt3-urql.mjs",

@@ -1,4 +1,4 @@
-import  {defineNuxtModule, Nuxt } from "@nuxt/kit";
+import { defineNuxtModule, Nuxt, resolveModule, addPluginTemplate } from "@nuxt/kit";
 import { ClientOptions } from "@urql/core";
 
 export type Options = ClientOptions & {
@@ -18,11 +18,9 @@ export default defineNuxtModule<Options>((nuxt: Nuxt) => ({
 
     /*
     addPluginTemplate({
-      src: require.resolve('nuxt3-urql/plugin'),
-      filename: 'urql.mjs',
+      src: resolveModule('nuxt3-urql/plugin'),
       options
     });
 */
-
   }
 }))

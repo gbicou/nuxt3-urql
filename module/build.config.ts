@@ -1,5 +1,4 @@
 import {BuildConfig} from "unbuild";
-// @ts-ignore
 import {name} from './package.json';
 
 export default {
@@ -17,7 +16,6 @@ export default {
     "@urql/vue",
     "@urql/core",
     "@nuxt/kit",
-    "pathe",
-    "url"
+    "#app"
   ],
 } as BuildConfig
