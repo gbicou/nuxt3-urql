@@ -3,8 +3,5 @@
   "workspaces": [
     "module",
     "example"
-  ],
-  "scripts": {
-    "vercel:build": "yarn workspaces run build && mv ./example/.vercel_build_output ./.vercel_build_output"
-  }
+  ]
 }
