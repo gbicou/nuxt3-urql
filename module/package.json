@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "nuxt3-urql",
+  "version": "0.0.1",
+  "exports": {
+    "require": "./dist/nuxt3-urql.cjs",
+    "import": "./dist/nuxt3-urql.mjs"
+  },
+  "scripts": {
+    "build": "unbuild"
+  },
+  "devDependencies": {
+    "unbuild": "^0.5.11"
+  },
+  "dependencies": {
+    "@nuxt/kit-edge": "^3.0.0-27257216.f5aea9f"
+  }
+}
