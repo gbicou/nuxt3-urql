@@ -1,5 +1,16 @@
 {
   "private": true,
+  "name": "nuxt3-urql",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bicouy0/nuxt3-urql.git"
+  },
+  "author": "bicouy0",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bicouy0/nuxt3-urql/issues"
+  },
+  "homepage": "https://github.com/bicouy0/nuxt3-urql#readme",
   "workspaces": [
     "module",
     "example"
