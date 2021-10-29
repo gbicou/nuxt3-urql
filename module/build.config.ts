@@ -1,21 +1,23 @@
 import {BuildConfig} from "unbuild";
 // @ts-ignore
-import pkg from './package.json';
+import {name} from './package.json';
 
 export default {
-    entries: [
-        {
-            input: './src/index',
-            name: pkg.name
-        },
-        {
-            input: './src/plugin',
-            format: "esm",
-        },
-    ],
-    externals: [
-        "@urql/vue",
-        "@urql/core",
-        "@nuxt/kit"
-    ],
+  declaration: true,
+  entries: [
+    {
+      input: 'src/index',
+      name
+    },
+    {
+      input: 'src/plugin',
+    },
+  ],
+  externals: [
+    "@urql/vue",
+    "@urql/core",
+    "@nuxt/kit",
+    "pathe",
+    "url"
+  ],
 } as BuildConfig
