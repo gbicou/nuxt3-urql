@@ -33,6 +33,6 @@
     "water.css": "^2.1.1"
   },
   "dependencies": {
-    "graphql": "^15.7.1"
+    "graphql": "^16.0.0"
   }
 }
