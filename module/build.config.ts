@@ -16,6 +16,10 @@ export default {
     "@urql/vue",
     "@urql/core",
     "@nuxt/kit",
-    "#app"
+    "@nuxt/devalue",
+    "pathe",
+    "#app",
+    "#build",
+    "#build/urql.options.mjs"
   ],
 } as BuildConfig
