@@ -37,11 +37,11 @@
     "eslint": "^8.1.0",
     "eslint-plugin-vue": "^8.0.3",
     "graphql-tag": "^2.12.5",
-    "nuxt3": "^3.0.0-27258467.4e424d0",
+    "nuxt3": "^3.0.0-27264456.0dd86de",
     "typescript": "^4.4.4",
     "water.css": "^2.1.1"
   },
   "dependencies": {
-    "graphql": "^16.0.0"
+    "graphql": "^16.0.1"
   }
 }
