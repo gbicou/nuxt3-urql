@@ -654,10 +654,10 @@
     auto-bind "~4.0.0"
     tslib "~2.3.0"
 
-"@graphql-codegen/typescript-urql-graphcache@^2.1.6":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/typescript-urql-graphcache/-/typescript-urql-graphcache-2.2.0.tgz#a22f50590727f44815d7d5055459ef4ebf752967"
-  integrity sha512-mraa/dOkQk1/I96Wpy6MCszVp7lwXc2fljixamx0Zj3eJKc5y+V1/4jyPxgVc2Iq2Epyto/b1wSQOmQdWCa3+w==
+"@graphql-codegen/typescript-urql-graphcache@^2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/typescript-urql-graphcache/-/typescript-urql-graphcache-2.2.1.tgz#49fe5ab08b176fb7e9b2fe551d1dc7335c7e0f43"
+  integrity sha512-ggkNI1UKRJ4r26j4fI1RXRx6+g28MWmVc1jHH5JQucXQJzvd/ESlwNwym1pwc2dB3WAu/yOabSmnTA6MQbnc+w==
   dependencies:
     "@graphql-codegen/plugin-helpers" "^2.3.0"
     "@graphql-codegen/visitor-plugin-common" "2.5.0"
