@@ -1,6 +1,7 @@
-import { Resolver as GraphCacheResolver, UpdateResolver as GraphCacheUpdateResolver, OptimisticMutationResolver as GraphCacheOptimisticMutationResolver, StorageAdapter as GraphCacheStorageAdapter } from '@urql/exchange-graphcache';
-import { IntrospectionData } from '@urql/exchange-graphcache/dist/types/ast';
+import type { Resolver as GraphCacheResolver, UpdateResolver as GraphCacheUpdateResolver, OptimisticMutationResolver as GraphCacheOptimisticMutationResolver, StorageAdapter as GraphCacheStorageAdapter } from '@urql/exchange-graphcache';
+import type { IntrospectionData } from '@urql/exchange-graphcache/dist/types/ast';
 export type Maybe<T> = T | null;
+export type InputMaybe<T> = Maybe<T>;
 export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };
 export type MakeOptional<T, K extends keyof T> = Omit<T, K> & { [SubKey in K]?: Maybe<T[SubKey]> };
 export type MakeMaybe<T, K extends keyof T> = Omit<T, K> & { [SubKey in K]: Maybe<T[SubKey]> };
@@ -28,7 +29,7 @@ export type Continent = {
 };
 
 export type ContinentFilterInput = {
-  code?: Maybe<StringQueryOperatorInput>;
+  code?: InputMaybe<StringQueryOperatorInput>;
 };
 
 export type Country = {
@@ -47,9 +48,9 @@ export type Country = {
 };
 
 export type CountryFilterInput = {
-  code?: Maybe<StringQueryOperatorInput>;
-  continent?: Maybe<StringQueryOperatorInput>;
-  currency?: Maybe<StringQueryOperatorInput>;
+  code?: InputMaybe<StringQueryOperatorInput>;
+  continent?: InputMaybe<StringQueryOperatorInput>;
+  currency?: InputMaybe<StringQueryOperatorInput>;
 };
 
 export type Language = {
@@ -61,7 +62,7 @@ export type Language = {
 };
 
 export type LanguageFilterInput = {
-  code?: Maybe<StringQueryOperatorInput>;
+  code?: InputMaybe<StringQueryOperatorInput>;
 };
 
 export type Query = {
@@ -81,12 +82,12 @@ export type QueryContinentArgs = {
 
 
 export type QueryContinentsArgs = {
-  filter?: Maybe<ContinentFilterInput>;
+  filter?: InputMaybe<ContinentFilterInput>;
 };
 
 
 export type QueryCountriesArgs = {
-  filter?: Maybe<CountryFilterInput>;
+  filter?: InputMaybe<CountryFilterInput>;
 };
 
 
@@ -101,7 +102,7 @@ export type QueryLanguageArgs = {
 
 
 export type QueryLanguagesArgs = {
-  filter?: Maybe<LanguageFilterInput>;
+  filter?: InputMaybe<LanguageFilterInput>;
 };
 
 export type State = {
@@ -112,12 +113,12 @@ export type State = {
 };
 
 export type StringQueryOperatorInput = {
-  eq?: Maybe<Scalars['String']>;
-  glob?: Maybe<Scalars['String']>;
-  in?: Maybe<Array<Maybe<Scalars['String']>>>;
-  ne?: Maybe<Scalars['String']>;
-  nin?: Maybe<Array<Maybe<Scalars['String']>>>;
-  regex?: Maybe<Scalars['String']>;
+  eq?: InputMaybe<Scalars['String']>;
+  glob?: InputMaybe<Scalars['String']>;
+  in?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
+  ne?: InputMaybe<Scalars['String']>;
+  nin?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
+  regex?: InputMaybe<Scalars['String']>;
 };
 
 export type WithTypename<T extends { __typename?: any }> = { [K in Exclude<keyof T, '__typename'>]?: T[K] } & { __typename: NonNullable<T['__typename']> };
