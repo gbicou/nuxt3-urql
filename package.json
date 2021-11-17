@@ -36,8 +36,8 @@
     "@urql/vue": "^0.6.0",
     "eslint": "^8.1.0",
     "eslint-plugin-vue": "^8.0.3",
-    "graphql-tag": "^2.12.5",
-    "nuxt3": "^3.0.0-27267095.2166661",
+    "graphql-tag": "^2.12.6",
+    "nuxt3": "^3.0.0-27286006.a08b435",
     "typescript": "^4.4.4",
     "water.css": "^2.1.1"
   },
