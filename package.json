@@ -34,7 +34,7 @@
     "@typescript-eslint/parser": "^5.4.0",
     "@urql/exchange-graphcache": "^4.3.5",
     "@urql/vue": "^0.6.0",
-    "eslint": "^8.3.0",
+    "eslint": "^8.4.1",
     "eslint-plugin-vue": "^8.1.1",
     "graphql-tag": "^2.12.6",
     "nuxt3": "^3.0.0-27307420.6a25d3e",
