@@ -43,5 +43,8 @@
   },
   "dependencies": {
     "graphql": "^16.1.0"
+  },
+  "resolutions": {
+    "ansi-regex": "^5.0.1"
   }
 }
