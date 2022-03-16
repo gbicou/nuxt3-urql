@@ -37,7 +37,7 @@
     "eslint": "^8.4.1",
     "eslint-plugin-vue": "^8.2.0",
     "graphql-tag": "^2.12.6",
-    "nuxt3": "^3.0.0-27447229.20f3171",
+    "nuxt3": "^3.0.0-27457159.ff88d91",
     "typescript": "^4.5.3",
     "water.css": "^2.1.1"
   },
