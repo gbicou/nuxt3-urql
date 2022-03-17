@@ -24,7 +24,7 @@
     "@graphql-codegen/near-operation-file-preset": "^2.2.2",
     "@graphql-codegen/typed-document-node": "^2.2.1",
     "@graphql-codegen/typescript": "^2.4.7",
-    "@graphql-codegen/typescript-apollo-client-helpers": "^2.1.8",
+    "@graphql-codegen/typescript-apollo-client-helpers": "^2.1.15",
     "@graphql-codegen/typescript-operations": "^2.2.1",
     "@graphql-codegen/typescript-urql": "^3.4.1",
     "@graphql-codegen/typescript-urql-graphcache": "^2.2.2",
