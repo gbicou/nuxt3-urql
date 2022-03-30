@@ -26,7 +26,7 @@
     "@graphql-codegen/typescript": "^2.4.7",
     "@graphql-codegen/typescript-apollo-client-helpers": "^2.1.8",
     "@graphql-codegen/typescript-operations": "^2.2.1",
-    "@graphql-codegen/typescript-urql": "^3.4.1",
+    "@graphql-codegen/typescript-urql": "^3.5.7",
     "@graphql-codegen/typescript-urql-graphcache": "^2.2.2",
     "@graphql-codegen/typescript-vue-urql": "^2.2.1",
     "@graphql-codegen/urql-introspection": "^2.1.0",
