@@ -170,9 +170,7 @@ export type GraphCacheResolvers = {
   }
 };
 
-export type GraphCacheOptimisticUpdaters = {
-  {}
-};
+export type GraphCacheOptimisticUpdaters = {};
 
 export type GraphCacheUpdaters = {
   Mutation?: {},
