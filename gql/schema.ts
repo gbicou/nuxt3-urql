@@ -121,7 +121,7 @@ export type StringQueryOperatorInput = {
   regex?: InputMaybe<Scalars['String']>;
 };
 
-export type WithTypename<T extends { __typename?: any }> = T & { __typename: NonNullable<T['__typename']> };
+export type WithTypename<T extends { __typename?: any }> = Partial<T> & { __typename: NonNullable<T['__typename']> };
 
 export type GraphCacheKeysConfig = {
   Continent?: (data: WithTypename<Continent>) => null | string,
