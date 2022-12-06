@@ -35,7 +35,7 @@
     "@urql/exchange-graphcache": "^5.0.1",
     "@urql/vue": "^1.0.2",
     "@vue/eslint-config-typescript": "^11",
-    "eslint": "^8.18.0",
+    "eslint": "^8.29.0",
     "eslint-plugin-vue": "^9.1.1",
     "graphql-tag": "^2.12.6",
     "nuxt": "^3.0.0",
