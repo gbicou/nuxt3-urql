@@ -4,5 +4,6 @@ export default defineNuxtConfig({
   css: ["water.css/out/light.css"],
   build: {
     transpile: ["@urql/vue"]
-  }
+  },
+  telemetry: false
 });
