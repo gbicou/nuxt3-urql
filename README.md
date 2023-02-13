@@ -1,5 +1,7 @@
 # Nuxt 3 example of graphql with ssr
 
+> :electric_plug: ***Available as a nuxt 3 module at https://github.com/gbicou/nuxt-urql***
+
 This is a example of nuxt3 application with :
 
 * [graphql code generation](https://www.graphql-code-generator.com/)
