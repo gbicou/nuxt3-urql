@@ -4,14 +4,14 @@
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "git://github.com/bicouy0/nuxt3-urql.git"
+    "url": "git://github.com/gbicou/nuxt3-urql.git"
   },
-  "author": "bicouy0",
+  "author": "Benjamin VIELLARD",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bicouy0/nuxt3-urql/issues"
+    "url": "https://github.com/gbicou/nuxt3-urql/issues"
   },
-  "homepage": "https://github.com/bicouy0/nuxt3-urql#readme",
+  "homepage": "https://github.com/gbicou/nuxt3-urql#readme",
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",
