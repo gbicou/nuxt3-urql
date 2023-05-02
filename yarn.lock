@@ -3247,14 +3247,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@urql/exchange-graphcache@npm:^6.0.3":
-  version: 6.0.3
-  resolution: "@urql/exchange-graphcache@npm:6.0.3"
+"@urql/exchange-graphcache@npm:^6.0.4":
+  version: 6.0.4
+  resolution: "@urql/exchange-graphcache@npm:6.0.4"
   dependencies:
     "@0no-co/graphql.web": ^1.0.1
     "@urql/core": ">=4.0.0"
     wonka: ^6.3.2
-  checksum: ba2fd0bfefa5909796394364c70ddc366843b2310e8b81760c54b09f1424e3ed536ebcba1fb2c16ab4ee77938cca51337cdd72c781a27355324845e1978cb70d
+  checksum: a1a3d882f2af191727ca2936dc3e68fc61f01f0a491722aa4fb12ba0ff2ae33d8beb299d3b9077eb462e093004462b9085dab6d67e06f1a733903a918035eadb
   languageName: node
   linkType: hard
 
@@ -8313,7 +8313,7 @@ __metadata:
     "@types/node": ^18.16.3
     "@typescript-eslint/eslint-plugin": ^5.59.1
     "@typescript-eslint/parser": ^5.59.1
-    "@urql/exchange-graphcache": ^6.0.3
+    "@urql/exchange-graphcache": ^6.0.4
     "@urql/vue": ^1.1.1
     "@vue/eslint-config-typescript": ^11.0.3
     eslint: ^8.39.0
