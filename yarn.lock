@@ -5509,9 +5509,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-vue@npm:^9.11.0":
-  version: 9.11.0
-  resolution: "eslint-plugin-vue@npm:9.11.0"
+"eslint-plugin-vue@npm:^9.11.1":
+  version: 9.11.1
+  resolution: "eslint-plugin-vue@npm:9.11.1"
   dependencies:
     "@eslint-community/eslint-utils": ^4.3.0
     natural-compare: ^1.4.0
@@ -5522,7 +5522,7 @@ __metadata:
     xml-name-validator: ^4.0.0
   peerDependencies:
     eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
-  checksum: 1bcb6cf76831419dbb18b9ef7a71831b69325eab1f83137af7a7ffe2800962af2afae30d5eb94210597e70e9503b698d31af210f0d36c0b3fd9cafc77d2a1895
+  checksum: dda3a135b411a0fab6dda06cfcf3dfcaebaff50150cc21860914d6fc2f17b23363e11e1ed96771904d1089f0fc7bdde3ac9fe292ed249c643d6ca9c3f51d4f6f
   languageName: node
   linkType: hard
 
@@ -8317,7 +8317,7 @@ __metadata:
     "@urql/vue": ^1.1.1
     "@vue/eslint-config-typescript": ^11.0.3
     eslint: ^8.39.0
-    eslint-plugin-vue: ^9.11.0
+    eslint-plugin-vue: ^9.11.1
     graphql: ^16.6.0
     graphql-tag: ^2.12.6
     nuxt: ^3.4.3
