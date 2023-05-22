@@ -3062,10 +3062,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.1.7":
-  version: 20.1.7
-  resolution: "@types/node@npm:20.1.7"
-  checksum: b722794290d22db1741e739c256876ca774b76ea2d647d9ec9d52c49b1b01049cc6f6332499a01ac81d641e8d078b33e4c5c59e409db80390ac6b8d7ef0c08a7
+"@types/node@npm:^20.2.3":
+  version: 20.2.3
+  resolution: "@types/node@npm:20.2.3"
+  checksum: 576065e8fc1fa45798c8f59a6bf809169582d04abc2e25fab1a048ffc734975b9992ae31be0d960cf705a21fb37112f7fcde11aa322beddf7491e73d5a5a988c
   languageName: node
   linkType: hard
 
@@ -8538,7 +8538,7 @@ __metadata:
     "@graphql-codegen/typescript-urql-graphcache": ^2.4.4
     "@graphql-codegen/typescript-vue-urql": ^2.3.6
     "@graphql-codegen/urql-introspection": ^2.2.1
-    "@types/node": ^20.1.7
+    "@types/node": ^20.2.3
     "@typescript-eslint/eslint-plugin": ^5.59.6
     "@typescript-eslint/parser": ^5.59.6
     "@unhead/vue": ^1.1.26
