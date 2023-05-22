@@ -1777,9 +1777,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/typescript-urql-graphcache@npm:^2.4.4":
-  version: 2.4.4
-  resolution: "@graphql-codegen/typescript-urql-graphcache@npm:2.4.4"
+"@graphql-codegen/typescript-urql-graphcache@npm:^2.4.5":
+  version: 2.4.5
+  resolution: "@graphql-codegen/typescript-urql-graphcache@npm:2.4.5"
   dependencies:
     "@graphql-codegen/plugin-helpers": ^3.0.0
     "@graphql-codegen/visitor-plugin-common": 2.13.1
@@ -1790,7 +1790,7 @@ __metadata:
     "@urql/exchange-graphcache": ^4.1.1 || ^5.0.0
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     graphql-tag: ^2.0.0
-  checksum: bcd0fdc1644d7ca0dfbf8835c7e1d970f12790d523b925be6c66fbdb171081d079e6ce505f3be621d1d1d4aebac5f5b39582e0114b77ac3686d7d878abcb0a27
+  checksum: 9a68f212433d3bb4c776c120d167de28245903a10b7a091798f60949b9d88f3a3904fa89765c939a8ac97ac0aeefce7b864ef87eb7e31f895421f0d34b4b165b
   languageName: node
   linkType: hard
 
@@ -8535,7 +8535,7 @@ __metadata:
     "@graphql-codegen/typescript-apollo-client-helpers": ^2.2.6
     "@graphql-codegen/typescript-operations": ^3.0.4
     "@graphql-codegen/typescript-urql": ^3.7.3
-    "@graphql-codegen/typescript-urql-graphcache": ^2.4.4
+    "@graphql-codegen/typescript-urql-graphcache": ^2.4.5
     "@graphql-codegen/typescript-vue-urql": ^2.3.6
     "@graphql-codegen/urql-introspection": ^2.2.1
     "@types/node": ^20.1.7
