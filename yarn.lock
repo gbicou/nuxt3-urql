@@ -8553,7 +8553,7 @@ __metadata:
     ts-node: ^10.9.1
     typescript: ^5.0.4
     vue: ^3.3.2
-    vue-router: ^4.2.0
+    vue-router: ^4.2.1
     water.css: ^2.1.1
   languageName: unknown
   linkType: soft
@@ -11320,6 +11320,17 @@ __metadata:
   peerDependencies:
     vue: ^3.2.0
   checksum: 2ae40a4dd86e9abf50596cf779640daf61da8d668ffccf063ccc8762f95149eec6784700a4f2aa9d8854b4a6a885f2e300ddc84e5c4069dbd4a6b0cfed9d8e1a
+  languageName: node
+  linkType: hard
+
+"vue-router@npm:^4.2.1":
+  version: 4.2.1
+  resolution: "vue-router@npm:4.2.1"
+  dependencies:
+    "@vue/devtools-api": ^6.5.0
+  peerDependencies:
+    vue: ^3.2.0
+  checksum: 99ac17d79d46127e51d9ab2cd4577f4740ff31190e1d6cc719cf58c231b066f6442a2acd22bc185c0255bc9ad6d4c9074c23b84e61bff7ae47001f583173024d
   languageName: node
   linkType: hard
 
