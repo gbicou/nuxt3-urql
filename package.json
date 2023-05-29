@@ -38,7 +38,7 @@
     "@urql/vue": "^1.1.1",
     "@vue/eslint-config-typescript": "^11.0.3",
     "eslint": "^8.40.0",
-    "eslint-plugin-vue": "^9.13.0",
+    "eslint-plugin-vue": "^9.14.1",
     "graphql-tag": "^2.12.6",
     "nuxt": "^3.5.0",
     "ts-node": "^10.9.1",
