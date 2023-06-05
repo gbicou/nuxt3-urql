@@ -3314,15 +3314,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@urql/vue@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "@urql/vue@npm:1.1.1"
+"@urql/vue@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "@urql/vue@npm:1.1.2"
   dependencies:
     "@urql/core": ^4.0.0
     wonka: ^6.3.2
   peerDependencies:
     vue: ^2.7.0 || ^3.0.0
-  checksum: 4c2f807eb6dd2dbb5dc8389fd064647462f8d3dd2bc155fffcadb0d035e542ca4079472b6e61cb36f5d15788f26df8f31ec989fd7a713fd34a11847731e3aa8c
+  checksum: a49c365ba7073b3b1de27acc6d703a7d8c36324dfac43103b5c42b18312dbec3deceedbb8e49f1bd0212d9bd238346f6ddbd667130717450ec425a7964c63321
   languageName: node
   linkType: hard
 
@@ -8375,7 +8375,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.59.8
     "@unhead/vue": ^1.1.27
     "@urql/exchange-graphcache": ^6.0.4
-    "@urql/vue": ^1.1.1
+    "@urql/vue": ^1.1.2
     "@vue/eslint-config-typescript": ^11.0.3
     eslint: ^8.41.0
     eslint-plugin-vue: ^9.14.1
