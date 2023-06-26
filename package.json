@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "@unhead/vue": "^1.1.27",
-    "graphql": "^16.6.0",
+    "graphql": "^16.7.1",
     "vue": "^3.3.4",
     "vue-router": "^4.2.2"
   },
