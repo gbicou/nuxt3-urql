@@ -42,7 +42,7 @@
     "graphql-tag": "^2.12.6",
     "nuxt": "^3.5.3",
     "ts-node": "^10.9.1",
-    "typescript": "~5.0.4",
+    "typescript": "~5.1.6",
     "water.css": "^2.1.1"
   },
   "dependencies": {
