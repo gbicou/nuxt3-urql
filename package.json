@@ -49,7 +49,7 @@
     "@unhead/vue": "^1.1.29",
     "graphql": "^16.7.1",
     "vue": "^3.3.4",
-    "vue-router": "^4.2.2"
+    "vue-router": "^4.2.4"
   },
   "packageManager": "yarn@3.3.1"
 }
