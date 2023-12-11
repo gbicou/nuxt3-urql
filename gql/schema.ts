@@ -10,7 +10,7 @@ export type MakeEmpty<T extends { [key: string]: unknown }, K extends keyof T> =
 export type Incremental<T> = T | { [P in keyof T]?: P extends ' $fragmentName' | '__typename' ? T[P] : never };
 /** All built-in and custom scalars, mapped to their actual values */
 export type Scalars = {
-  ID: { input: string | number; output: string; }
+  ID: { input: string; output: string; }
   String: { input: string; output: string; }
   Boolean: { input: boolean; output: boolean; }
   Int: { input: number; output: number; }
@@ -176,8 +176,45 @@ export type GraphCacheResolvers = {
 export type GraphCacheOptimisticUpdaters = {};
 
 export type GraphCacheUpdaters = {
+  Query?: {
+    continent?: GraphCacheUpdateResolver<{ continent: Maybe<WithTypename<Continent>> }, QueryContinentArgs>,
+    continents?: GraphCacheUpdateResolver<{ continents: Array<WithTypename<Continent>> }, QueryContinentsArgs>,
+    countries?: GraphCacheUpdateResolver<{ countries: Array<WithTypename<Country>> }, QueryCountriesArgs>,
+    country?: GraphCacheUpdateResolver<{ country: Maybe<WithTypename<Country>> }, QueryCountryArgs>,
+    language?: GraphCacheUpdateResolver<{ language: Maybe<WithTypename<Language>> }, QueryLanguageArgs>,
+    languages?: GraphCacheUpdateResolver<{ languages: Array<WithTypename<Language>> }, QueryLanguagesArgs>
+  },
   Mutation?: {},
   Subscription?: {},
+  Continent?: {
+    code?: GraphCacheUpdateResolver<Maybe<WithTypename<Continent>>, Record<string, never>>,
+    countries?: GraphCacheUpdateResolver<Maybe<WithTypename<Continent>>, Record<string, never>>,
+    name?: GraphCacheUpdateResolver<Maybe<WithTypename<Continent>>, Record<string, never>>
+  },
+  Country?: {
+    capital?: GraphCacheUpdateResolver<Maybe<WithTypename<Country>>, Record<string, never>>,
+    code?: GraphCacheUpdateResolver<Maybe<WithTypename<Country>>, Record<string, never>>,
+    continent?: GraphCacheUpdateResolver<Maybe<WithTypename<Country>>, Record<string, never>>,
+    currency?: GraphCacheUpdateResolver<Maybe<WithTypename<Country>>, Record<string, never>>,
+    emoji?: GraphCacheUpdateResolver<Maybe<WithTypename<Country>>, Record<string, never>>,
+    emojiU?: GraphCacheUpdateResolver<Maybe<WithTypename<Country>>, Record<string, never>>,
+    languages?: GraphCacheUpdateResolver<Maybe<WithTypename<Country>>, Record<string, never>>,
+    name?: GraphCacheUpdateResolver<Maybe<WithTypename<Country>>, Record<string, never>>,
+    native?: GraphCacheUpdateResolver<Maybe<WithTypename<Country>>, Record<string, never>>,
+    phone?: GraphCacheUpdateResolver<Maybe<WithTypename<Country>>, Record<string, never>>,
+    states?: GraphCacheUpdateResolver<Maybe<WithTypename<Country>>, Record<string, never>>
+  },
+  Language?: {
+    code?: GraphCacheUpdateResolver<Maybe<WithTypename<Language>>, Record<string, never>>,
+    name?: GraphCacheUpdateResolver<Maybe<WithTypename<Language>>, Record<string, never>>,
+    native?: GraphCacheUpdateResolver<Maybe<WithTypename<Language>>, Record<string, never>>,
+    rtl?: GraphCacheUpdateResolver<Maybe<WithTypename<Language>>, Record<string, never>>
+  },
+  State?: {
+    code?: GraphCacheUpdateResolver<Maybe<WithTypename<State>>, Record<string, never>>,
+    country?: GraphCacheUpdateResolver<Maybe<WithTypename<State>>, Record<string, never>>,
+    name?: GraphCacheUpdateResolver<Maybe<WithTypename<State>>, Record<string, never>>
+  },
 };
 
 export type GraphCacheConfig = Parameters<typeof offlineExchange>[0] & {
