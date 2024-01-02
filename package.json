@@ -31,16 +31,16 @@
     "@graphql-codegen/typescript-urql-graphcache": "^3.0.0",
     "@graphql-codegen/typescript-vue-urql": "^3.0.0",
     "@graphql-codegen/urql-introspection": "^3.0.0",
-    "@types/node": "^20.10.4",
-    "@typescript-eslint/eslint-plugin": "^6.13.2",
-    "@typescript-eslint/parser": "^6.13.2",
+    "@types/node": "^20.10.6",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
     "@urql/exchange-graphcache": "^6.4.0",
     "@urql/vue": "^1.1.2",
     "@vue/eslint-config-typescript": "^12.0.0",
-    "eslint": "^8.55.0",
+    "eslint": "^8.56.0",
     "eslint-plugin-vue": "^9.19.2",
     "graphql-tag": "^2.12.6",
-    "nuxt": "^3.8.2",
+    "nuxt": "^3.9.0",
     "ts-node": "^10.9.2",
     "typescript": "~5.3.3",
     "water.css": "^2.1.1"
@@ -48,7 +48,7 @@
   "dependencies": {
     "@unhead/vue": "^1.8.9",
     "graphql": "^16.8.1",
-    "vue": "^3.3.11",
+    "vue": "^3.4.3",
     "vue-router": "^4.2.5"
   },
   "packageManager": "pnpm@8.12.0"
