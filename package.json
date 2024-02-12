@@ -48,7 +48,7 @@
   "dependencies": {
     "@unhead/vue": "^1.8.9",
     "graphql": "^16.8.1",
-    "vue": "^3.4.3",
+    "vue": "^3.4.18",
     "vue-router": "^4.2.5"
   },
   "packageManager": "pnpm@8.12.0"
