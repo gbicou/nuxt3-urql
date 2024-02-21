@@ -1,8 +1,8 @@
-import { createClient, ssrExchange, dedupExchange, fetchExchange, Client } from '@urql/core';
+import { createClient, ssrExchange, fetchExchange, Client, type SSRData } from '@urql/core';
 import { cacheExchange as graphCacheExchange } from '@urql/exchange-graphcache'
 import { defineNuxtPlugin } from '#app'
 import schema from '../gql/introspection';
-import { GraphCacheConfig } from '~/gql/schema';
+import type { GraphCacheConfig } from '~/gql/schema';
 import { ref } from "vue";
 
 const ssrKey = '__URQL_DATA__'
@@ -17,7 +17,7 @@ export default defineNuxtPlugin(nuxt => {
   // when app is created in browser, restore SSR state from nuxt payload
   if (process.client) {
     nuxt.hook('app:created', () => {
-      ssr.restoreData(nuxt.payload[ssrKey])
+      ssr.restoreData(nuxt.payload[ssrKey] as SSRData)
     })
   }
 
@@ -46,7 +46,6 @@ export default defineNuxtPlugin(nuxt => {
   const client = createClient({
     url: 'https://countries.trevorblades.com/',
     exchanges: [
-      dedupExchange,
       cache,
       ssr, // Add `ssr` in front of the `fetchExchange`
       fetchExchange,
