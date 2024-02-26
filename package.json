@@ -51,7 +51,7 @@
     "@unhead/vue": "^1.8.10",
     "graphql": "^16.8.1",
     "vue": "^3.4.19",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.3.0"
   },
   "packageManager": "pnpm@8.15.3"
 }
