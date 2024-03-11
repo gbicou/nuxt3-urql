@@ -32,7 +32,7 @@
     "@graphql-codegen/typescript-vue-urql": "^3.0.0",
     "@graphql-codegen/urql-introspection": "^3.0.0",
     "@graphql-typed-document-node/core": "^3.2.0",
-    "@types/node": "^20.11.19",
+    "@types/node": "^20.11.25",
     "@typescript-eslint/eslint-plugin": "^7.0.2",
     "@typescript-eslint/parser": "^7.0.2",
     "@urql/exchange-graphcache": "^6.4.1",
