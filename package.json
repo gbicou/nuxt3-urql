@@ -42,7 +42,7 @@
     "eslint": "^8.57.1",
     "eslint-plugin-vue": "^9.28.0",
     "graphql-tag": "^2.12.6",
-    "nuxt": "^3.13.2",
+    "nuxt": "^3.16.0",
     "ts-node": "^10.9.2",
     "typescript": "~5.4.5",
     "water.css": "^2.1.1"
